@@ -1,0 +1,30 @@
+.footer {
+  bottom:0;
+  width:100%;
+  height: 5rem;
+  background: grey;
+  z-index: 3;
+}
+
+.wrapper-component {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fefdf1;
+}
+
+.router-wrapper {
+  flex-grow: 1;
+  min-height: 1000px;
+  padding: 0 9rem;
+  z-index: 1;
+}
+
+mat-toolbar {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0;
+  background: #2F3061;
+  color: #fff;
+  z-index: 3;
+}
