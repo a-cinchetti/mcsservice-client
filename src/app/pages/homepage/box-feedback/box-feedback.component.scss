@@ -1,0 +1,31 @@
+.feedback-header {
+  font-size: 2rem;
+  color: #2F3061;
+}
+
+.carousel-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 22rem;
+  min-height: 10rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.feedback-content {
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+  color: #0081A7;
+  text-align: center;
+  line-height: 35px;
+}
+.feedback-author {
+  font-size: 20px;
+}

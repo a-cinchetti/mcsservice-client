@@ -1,0 +1,28 @@
+<div>
+  <span class="feedback-header"><strong>{{'Dicono di noi' | uppercase}}</strong></span>
+  <div class="carousel-body">
+    <ng-container
+      *ngTemplateOutlet="feedback context: {
+      $implicit: {content: 'Esistono impresari che non esistono', author: 'Pippo'}}">
+    </ng-container>
+    <ng-container
+      *ngTemplateOutlet="feedback context: {
+      $implicit: {content: 'Meglio dei rumeni sottopagati', author: 'Paperino'}}">
+    </ng-container>
+    <ng-container
+      *ngTemplateOutlet="feedback context: {
+      $implicit: {content: 'Sono sempre stati i migliori. Mai visto nulla di simile', author: 'Minnie'}}">
+    </ng-container>
+    <ng-container
+      *ngTemplateOutlet="feedback context: {
+      $implicit: {content: 'Ma che ve lo dico a fare? top number 1', author: 'Pluto'}}">
+    </ng-container>
+  </div>
+</div>
+
+<ng-template #feedback let-field>
+  <div class="feedback-card">
+    <span class="feedback-content"><strong>{{field.content}}</strong></span>
+    <span class="feedback-author">{{field.author}}</span>
+  </div>
+</ng-template>
