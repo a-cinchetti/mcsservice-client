@@ -1,0 +1,20 @@
+<div class="box-carousel">
+  <div class="carousel-section">
+    <div *ngFor="let field of fields" class="carousel-field" (click)="tabSelected(field.index)"
+         [ngClass]="getStatus(field.index) ? 'active' : ''">
+      <span><strong>{{field.name | uppercase}}</strong></span>
+    </div>
+  </div>
+  <div *ngIf="!isNumberIndexSelected()" class="empty-index">
+    <span> seleziona un tab</span>
+  </div>
+  <div *ngIf="isNumberIndexSelected()" class="box-index-selected">
+    <div class="subField-column">
+      <div *ngFor="let subField of getSubFields()" class="subField" (click)="setSubFieldSelected(subField.name)"
+           [ngClass]="getStatusSubfield(subField.name) ? 'active' : ''">
+        <span>{{subField.name | uppercase}}</span>
+      </div>
+    </div>
+    <div class="subField-separator"></div>
+  </div>
+</div>

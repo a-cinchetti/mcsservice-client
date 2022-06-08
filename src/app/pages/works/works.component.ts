@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-works',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorksComponent implements OnInit {
 
-  constructor() { }
+  index: number | undefined;
+  fields = [];
 
-  ngOnInit(): void {
+  constructor(private route: ActivatedRoute) {
   }
 
+  ngOnInit(): void {
+    if (this.route.snapshot.paramMap.get("workIndex") !== null && this.route.snapshot.paramMap.get("workIndex") !== undefined) {
+      this.index = Number(this.route.snapshot.paramMap.get("workIndex"));
+    }
+    fetch('./assets/json/works-fields.json').then(res => res.json())
+      .then(jsonData => {
+        this.fields = jsonData;
+      });
+  }
 }

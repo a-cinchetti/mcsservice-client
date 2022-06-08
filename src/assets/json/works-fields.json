@@ -1,0 +1,36 @@
+[
+  {
+    "name": "ristrutturazione",
+    "active": false,
+    "index": 0,
+    "subFields": [
+      {
+        "name": "ristrutturazione interni"
+      },
+      {
+        "name": "ristrutturazione esterni"
+      },
+      {
+        "name": "ristrutturazione solaio"
+      },
+      {
+        "name": "ristrutturazione cantina"
+      }
+    ]
+  },
+  {
+    "name": "tinteggiatura",
+    "active": false,
+    "index": 1
+  },
+  {
+    "name": "nuovo",
+    "active": false,
+    "index": 2
+  },
+  {
+    "name": "altro",
+    "active": false,
+    "index": 3
+  }
+]

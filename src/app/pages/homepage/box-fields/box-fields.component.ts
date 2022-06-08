@@ -1,20 +1,15 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import { Router } from '@angular/router';
-import {filter} from "rxjs";
 
 @Component({
   selector: 'app-box-fields',
   templateUrl: './box-fields.component.html',
   styleUrls: ['./box-fields.component.scss']
 })
-export class BoxFieldsComponent implements OnInit {
+export class BoxFieldsComponent implements OnInit, OnChanges {
 
-  private fields = [
-    {name: "ristrutturazione", active: false, index: 0},
-    {name: "tinteggiatura", active: false, index: 1},
-    {name: "nuovo", active: false, index: 2},
-    {name: "altro", active: false, index: 3}
-  ]
+  @Input()
+  fields: any;
 
   constructor(private router: Router) {
   }
@@ -22,18 +17,22 @@ export class BoxFieldsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngOnChanges(changes: SimpleChanges) {
+  }
+
   getName(index: number) {
-    return this.fields.filter(el => el.index === index)[0].name;
+    return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.name;
   }
 
   getStatus(index: number) {
-    return this.fields.filter(el => el.index === index)[0].active;
+    return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.active;
   }
 
   setActiveField(index: number) {
-    this.fields.forEach( el => {
+    this.fields.forEach( (el: { active: boolean; index: number; }) => {
         el.active = el.index === index;
     })
+    this.router.navigate(["/works", {workIndex: index}])
   }
 
   goToContactsPage() {

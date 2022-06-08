@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  fields = [];
   constructor() { }
 
   ngOnInit(): void {
+    fetch('./assets/json/works-fields.json').then(res => res.json())
+      .then(jsonData => {
+        this.fields = jsonData;
+      });
   }
-
 }

@@ -1,0 +1,78 @@
+.box-carousel {
+  width: 100%;
+  height: 50rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0 0 20px #999999;
+}
+
+.carousel-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+}
+
+.carousel-field {
+  display: flex;
+  width: 17%;
+  min-width: 13rem;
+  height: 3rem;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 0 10px #999999;
+
+  &.active {
+    background-color: #0081A7;
+    color: white;
+  }
+}
+
+.empty-index {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-index-selected {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.subField-column {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  margin-top: 2rem;
+}
+
+.subField {
+  display: flex;
+  width: 15rem;
+  border-radius: 4px;
+  box-shadow: 0 0 3px #999999;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  cursor: pointer;
+  &.active {
+    background-color: #0081A7;
+    color: white;
+  }
+}
+
+.subField-separator {
+  margin: 3rem 0;
+  width: 2px;
+  background-color: #CCCCCC;
+}
