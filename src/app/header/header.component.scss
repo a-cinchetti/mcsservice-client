@@ -1,0 +1,18 @@
+.header-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.header-icon {
+  cursor: pointer;
+}
+
+span:not(:last-child) {
+  margin-right: 4rem;
+}
+
+span {
+  cursor: pointer;
+}

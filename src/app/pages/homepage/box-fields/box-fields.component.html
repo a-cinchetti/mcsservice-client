@@ -1,9 +1,32 @@
 <div class="home-card">
-  <div class="description"></div>
+  <div class="description">
+    <div class="text-description">
+      <span class="society-text">
+        <strong>
+          {{'Mcs-service' | uppercase }}
+        </strong>
+      </span>
+      <span class="society-summary">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      </span>
+      <button mat-raised-button color="primary" (click)="goToContactsPage()">{{'Contattaci' | uppercase}}</button>
+    </div>
+  </div>
   <div class="fields">
-    <div class="field ristrutturazione"></div>
-    <div class="field tinteggiatura"></div>
-    <div class="field nuovo"></div>
-    <div class="field altro"></div>
+    <div class="field ristrutturazione" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
+      <span><strong>{{getName(0) | uppercase}}</strong></span>
+    </div>
+    <div class="field tinteggiatura" [ngClass]="getStatus(1) ? 'active' : ''" (click)="setActiveField(1)">
+      <span><strong>{{getName(1) | uppercase}}</strong></span>
+    </div>
+    <div class="field nuovo" [ngClass]="getStatus(2) ? 'active' : ''" (click)="setActiveField(2)">
+      <span><strong>{{getName(2) | uppercase}}</strong></span>
+    </div>
+    <div class="field altro" [ngClass]="getStatus(3) ? 'active' : ''" (click)="setActiveField(3)">
+      <span><strong>{{getName(3) | uppercase}}</strong></span>
+    </div>
   </div>
 </div>

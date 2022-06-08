@@ -28,3 +28,7 @@ mat-toolbar {
   z-index: 3;
   box-shadow: 0 0 20px #111111;
 }
+
+app-header {
+  width: 100%;
+}
