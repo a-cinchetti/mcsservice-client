@@ -3,34 +3,36 @@
 @import "~swiper/scss/pagination";
 @import "~swiper/scss/autoplay";
 @import "~swiper/scss/navigation";
+.prova {
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    max-width: 450px;
+    //height: 300px;
+    align-self: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .box-carousel {
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #999999;
+  }
+
+  .carousel-header {
+    font-size: 2rem;
+    color: #2F3061;
+  }
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  max-width: 450px;
-  //height: 300px;
-  align-self: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-
-.box-carousel {
-  width: 100%;
-  background-color: white;
-  border-radius: 25px;
-  box-shadow: 0 0 20px #999999;
-}
-
-.carousel-header {
-  font-size: 2rem;
-  color: #2F3061;
-}

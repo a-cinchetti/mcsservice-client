@@ -10,11 +10,13 @@
   </div>
   <div *ngIf="isNumberIndexSelected()" class="box-index-selected">
     <div class="subField-column">
-      <div *ngFor="let subField of getSubFields()" class="subField" (click)="setSubFieldSelected(subField.name)"
+      <div *ngFor="let subField of getSubFields()" class="subField" (click)="setSubFieldSelected(subField)"
            [ngClass]="getStatusSubfield(subField.name) ? 'active' : ''">
         <span>{{subField.name | uppercase}}</span>
       </div>
     </div>
     <div class="subField-separator"></div>
+    <app-img-container [imagesList]="this.imagesList" *ngIf="this.imagesList.length > 0 "></app-img-container>
+<!--    <app-img-container-new></app-img-container-new>-->
   </div>
 </div>

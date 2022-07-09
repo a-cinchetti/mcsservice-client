@@ -1,0 +1,35 @@
+<div class="img-container-box" *ngIf="this.imagesList?.length != 1">
+  <swiper
+    [slidesPerView]="1"
+    [spaceBetween]="10"
+    [loop]="true"
+    [pagination]="{
+      clickable: true
+    }"
+    [navigation]="true"
+    class="mySwiper"
+  >
+    <ng-template swiperSlide *ngFor="let image of imagesList"
+    ><img src="{{image}}"/></ng-template
+    >
+  </swiper>
+</div>
+<div  class="img-container-box" *ngIf="this.imagesList?.length == 1">
+
+<swiper
+  [slidesPerView]="1"
+  [spaceBetween]="10"
+  [loop]="true"
+  [pagination]="{
+      clickable: false
+    }"
+  [navigation]="false"
+  [cssMode]="true"
+  class="mySwiper"
+>
+  <ng-template swiperSlide *ngFor="let image of imagesList"
+  ><img src="{{image}}"/></ng-template
+  >
+</swiper>
+</div>
+

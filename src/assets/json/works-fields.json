@@ -5,16 +5,35 @@
     "index": 0,
     "subFields": [
       {
-        "name": "ristrutturazione interni"
+        "name": "ristrutturazione interni",
+        "images": [
+          "https://swiperjs.com/demos/images/nature-1.jpg",
+          "https://swiperjs.com/demos/images/nature-2.jpg",
+          "./assets/img/iphone.jpg"
+        ]
       },
       {
-        "name": "ristrutturazione esterni"
+        "name": "ristrutturazione esterni",
+        "images": [
+          "https://swiperjs.com/demos/images/nature-3.jpg"
+        ]
       },
       {
-        "name": "ristrutturazione solaio"
+        "name": "ristrutturazione solaio",
+        "images": [
+          "https://swiperjs.com/demos/images/nature-4.jpg",
+          "https://swiperjs.com/demos/images/nature-5.jpg",
+          "https://swiperjs.com/demos/images/nature-6.jpg",
+          "./assets/img/homepage2.jpeg"
+        ]
       },
       {
-        "name": "ristrutturazione cantina"
+        "name": "ristrutturazione cantina",
+        "images": [
+          "https://swiperjs.com/demos/images/nature-7.jpg",
+          "https://swiperjs.com/demos/images/nature-8.jpg",
+          "https://swiperjs.com/demos/images/nature-9.jpg"
+        ]
       }
     ]
   },

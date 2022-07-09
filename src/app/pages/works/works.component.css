@@ -1,6 +1,5 @@
 .image {
   position: absolute;
-  top: 64px;
   z-index: -1;
   left: 0;
   object-fit:cover;
@@ -13,7 +12,16 @@
 
 .works {
   width: 100%;
-  margin: 25rem 0 10rem 0;
+  margin: 0 0 10rem 0;
   display: flex;
   flex-direction: column;
+}
+
+.title-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: white;
+  margin: 10rem;
 }

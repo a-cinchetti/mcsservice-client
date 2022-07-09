@@ -14,6 +14,7 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
   private selected: boolean = false;
   private subFieldSelected: boolean = false;
   private subFieldNameSelected: any;
+  imagesList: string[] = [];
 
   constructor() {
   }
@@ -22,13 +23,29 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
     if (this.indexSelected !== null && this.indexSelected !== undefined) {
       this.selected = true;
       this.setActiveField(this.indexSelected);
+      if (!this.subFieldSelected) {
+        this.setImagesListByDefault();
+      }
     }
+  }
+
+  setImagesListBySubFields(imagesList: string[]) {
+    this.imagesList = imagesList
+  }
+
+  setImagesListByDefault() {
+    const subFields = this.getSubFields();
+    this.imagesList = [];
+    subFields?.forEach((el: any) => {
+      this.imagesList = this.imagesList.concat(el.images);
+    })
   }
 
   ngOnInit(): void {
     if (this.indexSelected !== null && this.indexSelected !== undefined) {
       this.selected = true;
       this.setActiveField(this.indexSelected);
+      this.setImagesListByDefault();
     }
   }
 
@@ -38,6 +55,7 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
       this.setActiveField(index);
       this.indexSelected = index;
       this.resetSubFieldSelected();
+      this.setImagesListByDefault();
     }
   }
 
@@ -71,10 +89,14 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
     return this.indexSelected !== null && this.indexSelected !== undefined
   }
 
-  setSubFieldSelected(subFieldName: string) {
+  setSubFieldSelected(subField: any) {
     this.subFieldSelected = true;
-    if (this.subFieldNameSelected !== subFieldName) {
-      this.subFieldNameSelected = subFieldName;
+    if (this.subFieldNameSelected !== subField.name) {
+      this.subFieldNameSelected = subField.name;
+      this.setImagesListBySubFields(subField.images);
+    } else {
+      this.setImagesListByDefault();
+      this.subFieldNameSelected = null;
     }
   }
 }

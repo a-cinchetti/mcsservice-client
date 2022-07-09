@@ -1,7 +1,7 @@
 .footer {
   bottom:0;
   width:100%;
-  height: 5rem;
+  /*height: 5rem;*/
   background: grey;
   z-index: 3;
 }
@@ -10,23 +10,22 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #fefdf1;
+  background-color: #F8E9A1;
 }
 
 .router-wrapper {
   flex-grow: 1;
-  padding: 0 9rem;
+  padding: 0 5rem;
   z-index: 1;
 }
 
 mat-toolbar {
-  position: sticky;
-  position: -webkit-sticky; /* For macOS/iOS Safari */
+  position: absolute;
+  //position: -webkit-sticky; /* For macOS/iOS Safari */
   top: 0;
-  background: #2F3061;
+  background: transparent;
   color: #fff;
   z-index: 3;
-  box-shadow: 0 0 20px #111111;
 }
 
 app-header {
