@@ -1,6 +1,10 @@
-<div>
-  <span class="feedback-header"><strong>{{'Dicono di noi' | uppercase}}</strong></span>
-  <div class="carousel-body">
+<div class="container-box">
+  <div class="header-partners">
+    <img src="./assets/svg/partner.svg"/>
+    <span class="partners-header"><strong>{{'Partner & clienti' | uppercase}}</strong></span>
+  </div>
+
+  <div class="partners-body">
     <ng-container
       *ngTemplateOutlet="feedback context: {
       $implicit: {content: 'Esistono impresari che non esistono', author: 'Pippo'}}">
@@ -17,12 +21,24 @@
       *ngTemplateOutlet="feedback context: {
       $implicit: {content: 'Ma che ve lo dico a fare? top number 1', author: 'Pluto'}}">
     </ng-container>
+    <ng-container
+      *ngTemplateOutlet="feedback context: {
+      $implicit: {content: 'Ma che ve lo dico a fare? top number 1', author: 'Pluto'}}">
+    </ng-container>
+    <ng-container
+      *ngTemplateOutlet="feedback context: {
+      $implicit: {content: 'Ma che ve lo dico a fare? top number 1', author: 'Pluto'}}">
+    </ng-container>
+    <ng-container
+      *ngTemplateOutlet="feedback context: {
+      $implicit: {content: 'Ma che ve lo dico a fare? top number 1', author: 'Pluto'}}">
+    </ng-container>
   </div>
 </div>
 
 <ng-template #feedback let-field>
-  <div class="feedback-card">
-    <span class="feedback-content"><strong>{{field.content}}</strong></span>
+  <div class="partners-card">
+    <img src="./assets/svg/vans.svg"/>
     <span class="feedback-author">{{field.author}}</span>
   </div>
 </ng-template>

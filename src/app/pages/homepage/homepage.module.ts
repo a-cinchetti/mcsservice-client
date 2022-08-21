@@ -4,7 +4,7 @@ import {HomepageComponent} from "./homepage.component";
 import {BoxFieldsModule} from "./box-fields/box-fields.module";
 import { BoxFieldsComponent } from './box-fields/box-fields.component';
 import {BoxCarouselModule} from "./box-carousel/box-carousel.module";
-import {BoxFeedbackModule} from "./box-feedback/box-feedback.module";
+import {BoxPartnersModule} from "./box-partners/box-partners.module";
 
 
 
@@ -17,7 +17,7 @@ import {BoxFeedbackModule} from "./box-feedback/box-feedback.module";
     CommonModule,
     BoxFieldsModule,
     BoxCarouselModule,
-    BoxFeedbackModule,
+    BoxPartnersModule,
   ]
 })
 export class HomepageModule { }

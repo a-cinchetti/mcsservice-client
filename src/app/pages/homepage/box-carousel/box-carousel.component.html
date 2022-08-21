@@ -1,9 +1,9 @@
-<div class="prova">
+<div class="container-carousel">
   <swiper
-    [effect]="'coverflow'"
     [grabCursor]="true"
     [centeredSlides]="true"
     [slidesPerView]="'auto'"
+    [spaceBetween]="40"
     [coverflowEffect]="{
       rotate: 50,
       stretch: 0,
@@ -16,11 +16,11 @@
       disableOnInteraction: false
     }"
     [loop]="true"
-    [pagination]="true"
+
     class="mySwiper"
   >
-    <ng-template swiperSlide
-    ><img src="https://swiperjs.com/demos/images/nature-1.jpg"/></ng-template
+    <ng-template swiperSlide class="prova"
+    ><img src="./assets/img/iphone.jpg"/></ng-template
     >
     <ng-template swiperSlide
     ><img src="./assets/img/homepage2.jpeg"/></ng-template

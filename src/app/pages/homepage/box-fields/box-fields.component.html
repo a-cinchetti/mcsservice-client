@@ -1,18 +1,26 @@
 <div class="home-card">
   <div class="description">
     <div class="text-description">
-      <span class="society-text">
-        <strong>
-          {{'La nostra storia' | uppercase }}
-        </strong>
-      </span>
+      <div class="header-description">
+        <img src="./assets/svg/home.svg"/>
+        <span class="society-text">
+          <strong>
+            {{'La nostra storia' | uppercase }}
+          </strong>
+        </span>
+      </div>
       <span class="society-summary">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
       </span>
-      <button mat-raised-button color="primary" (click)="goToContactsPage()">{{'Contattaci' | uppercase}}</button>
+      <button mat-raised-button color="primary" (click)="goToContactsPage()">
+        <div class="button-contact">
+          <img src="./assets/svg/contact.svg"/>
+          <span>{{'Contattaci' | uppercase}}</span>
+        </div>
+      </button>
     </div>
   </div>
   <div class="fields">

@@ -2,8 +2,6 @@
   background-color: white;
   display: flex;
   flex-direction: row;
-  border-radius: 10px;
-  box-shadow: 0 0 7px #999999;
   height: 35rem;
 }
 
@@ -18,7 +16,6 @@ button {
 
 .description {
   flex-grow: 1;
-  border-radius: 10px 0 0 10px;
   max-width: 50%;
   display: flex
 }
@@ -31,12 +28,36 @@ button {
   flex-grow: 1;
 }
 
+.header-description {
+  display: flex;
+  align-items: center;
+  img {
+    width: 4rem;
+    margin-right: 2rem;
+  }
+}
+
+button {
+  img {
+    width: 4rem;
+    margin-right: 1.5rem;
+  }
+  .button-contact {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 1.2rem;
+    }
+  }
+}
+
 .society-text {
   font-size: 1.5rem;
+  color: #24305E;
 }
 
 .fields {
-  border-radius: 0 10px 10px 0;
   flex-grow: 1;
   display: flex;
   flex-direction: row;
@@ -59,21 +80,19 @@ button {
   }
 
   &.ristrutturazione {
-    background-color: #0081A7;
+    background-color: #A8D0E6;
   }
 
   &.tinteggiatura {
-    background-color: #FED9B7;
-    border-radius: 0 10px 0 0;
+    background-color: #F8E9A1;
   }
 
   &.nuovo {
-    background-color: #F07167;
+    background-color: #F76C6C;
   }
 
   &.altro {
-    background-color: #00AFB9;
-    border-radius: 0 0 10px 0;
+    background-color: #374785;
   }
 }
 

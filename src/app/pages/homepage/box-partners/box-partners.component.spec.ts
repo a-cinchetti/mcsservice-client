@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BoxFeedbackComponent } from './box-feedback.component';
+import { BoxPartnersComponent } from './box-partners.component';
 
 describe('BoxFeedbackComponent', () => {
-  let component: BoxFeedbackComponent;
-  let fixture: ComponentFixture<BoxFeedbackComponent>;
+  let component: BoxPartnersComponent;
+  let fixture: ComponentFixture<BoxPartnersComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BoxFeedbackComponent ]
+      declarations: [ BoxPartnersComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BoxFeedbackComponent);
+    fixture = TestBed.createComponent(BoxPartnersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

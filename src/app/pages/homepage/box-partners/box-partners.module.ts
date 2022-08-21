@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BoxFeedbackComponent } from './box-feedback.component';
+import { BoxPartnersComponent } from './box-partners.component';
 
 
 
 @NgModule({
     declarations: [
-        BoxFeedbackComponent
+        BoxPartnersComponent
     ],
     exports: [
-        BoxFeedbackComponent
+        BoxPartnersComponent
     ],
     imports: [
         CommonModule
     ]
 })
-export class BoxFeedbackModule { }
+export class BoxPartnersModule { }

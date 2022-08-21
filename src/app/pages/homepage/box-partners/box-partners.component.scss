@@ -1,0 +1,54 @@
+.partners-header {
+  font-size: 2rem;
+  color: white;
+}
+
+.header-partners {
+  display: flex;
+  align-items: center;
+  img {
+    width: 10rem;
+    margin-right: 2rem;
+  }
+}
+
+.partners-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.partners-card {
+  display: flex;
+  flex-direction: column;
+  //max-width: 22rem;
+  margin: 2rem 2rem;
+  min-height: 10rem;
+  justify-content: center;
+  align-items: center;
+  background-color:transparent;
+  //background-image: url('');
+}
+
+.feedback-content {
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+}
+.feedback-author {
+  font-size: 20px;
+  color: white;
+}
+.container-box {
+  padding: 6rem 6rem;
+  background-color: #F76C6C;
+}
+
+img {
+  max-width: 250px;
+  background: transparent;
+}

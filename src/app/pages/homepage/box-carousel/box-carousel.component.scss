@@ -3,7 +3,9 @@
 @import "~swiper/scss/pagination";
 @import "~swiper/scss/autoplay";
 @import "~swiper/scss/navigation";
-.prova {
+.container-carousel {
+  padding: 6rem;
+  background-color: #F8E9A1;
   .swiper {
     width: 100%;
     padding-top: 50px;
@@ -13,14 +15,24 @@
   .swiper-slide {
     background-position: center;
     background-size: cover;
-    max-width: 450px;
+    max-width: 550px;
     //height: 300px;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    &.prova {
+      max-width: 254px;
+    }
   }
 
   .swiper-slide img {
     display: block;
-    width: 100%;
+    width: auto;
+    max-height: 550px;
+    max-width: 550px;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
   }
 
   .box-carousel {

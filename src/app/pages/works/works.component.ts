@@ -15,6 +15,7 @@ export class WorksComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    //TODO usare il locale storage invece del path param
     if (this.route.snapshot.paramMap.get("workIndex") !== null && this.route.snapshot.paramMap.get("workIndex") !== undefined) {
       this.index = Number(this.route.snapshot.paramMap.get("workIndex"));
     }

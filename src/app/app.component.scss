@@ -1,21 +1,23 @@
 .footer {
   bottom:0;
-  width:100%;
+  margin: 0 9rem;
+  //width:100%;
   /*height: 5rem;*/
-  background: grey;
+  background: #24305E;
   z-index: 3;
+  padding: 0 6rem;
 }
 
 .wrapper-component {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #F8E9A1;
+  background-color: #dcecf8;
 }
 
 .router-wrapper {
   flex-grow: 1;
-  padding: 0 5rem;
+  padding: 0 9rem;
   z-index: 1;
 }
 

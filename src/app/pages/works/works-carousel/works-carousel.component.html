@@ -6,7 +6,8 @@
     </div>
   </div>
   <div *ngIf="!isNumberIndexSelected()" class="empty-index">
-    <span> seleziona un tab</span>
+    <img src="./assets/svg/select_option.svg"/>
+    <span> <strong>{{'SELEZIONA UN TAB'}}</strong></span>
   </div>
   <div *ngIf="isNumberIndexSelected()" class="box-index-selected">
     <div class="subField-column">
