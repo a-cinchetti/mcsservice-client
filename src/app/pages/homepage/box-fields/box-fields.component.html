@@ -19,12 +19,12 @@ industriali, manutenzione edile ed impiantistica delle aziende.
           Inoltre, è specializzata in rifacimento facciate, trattamenti al fuoco delle strutture
 ed adeguamenti sismici.
         </span>
-<!--        <span class="motto">-->
-<!--          Gestiamo e eseguiamo progetti dalle prime lavorazioni fino alla-->
-<!--consegna finale impiantistica compresa, ottimizzando tempi e costi.-->
-<!--        </span>-->
+        <!--        <span class="motto">-->
+        <!--          Gestiamo e eseguiamo progetti dalle prime lavorazioni fino alla-->
+        <!--consegna finale impiantistica compresa, ottimizzando tempi e costi.-->
+        <!--        </span>-->
         <span class="end-text">
-          Lo svolge al meglio con un continuo e severo controllo dei materiali
+          Svolge il lavoro al meglio con un continuo e severo controllo dei materiali
 utilizzati, innovativi e rispettando tutti i regolamenti e le certificazioni
 vigenti in materia.
         </span>
@@ -39,20 +39,28 @@ vigenti in materia.
     </div>
   </div>
   <div class="fields">
-    <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
-      <span><strong>{{getName(0) | uppercase}}</strong></span>
+    <div class="container-scale">
+      <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
+        <span><strong>{{getName(0) | uppercase}}</strong></span>
+      </div>
     </div>
-    <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="setActiveField(1)">
-      <span><strong>{{getType(1) | uppercase}}</strong></span>
-      <span><strong>{{getName(1) | uppercase}}</strong></span>
+    <div class="container-scale">
+      <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="setActiveField(1)">
+        <span><strong>{{getType(1) | uppercase}}</strong></span>
+        <span><strong>{{getName(1) | uppercase}}</strong></span>
+      </div>
     </div>
-    <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="setActiveField(2)">
-      <span><strong>{{getType(2) | uppercase}}</strong></span>
-      <span><strong>{{getName(2) | uppercase}}</strong></span>
+    <div class="container-scale">
+      <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="setActiveField(2)">
+        <span><strong>{{getType(2) | uppercase}}</strong></span>
+        <span><strong>{{getName(2) | uppercase}}</strong></span>
+      </div>
     </div>
-    <div class="field th4" [ngClass]="getStatus(3) ? 'active' : ''" (click)="setActiveField(3)">
-      <img src="./assets/svg/construction.svg"/>
-      <span><strong>{{getName(3) | uppercase}}</strong></span>
+    <div class="container-scale">
+      <div class="field th4" [ngClass]="getStatus(3) ? 'active' : ''" (click)="setActiveField(3)">
+        <img src="./assets/svg/construction.svg"/>
+        <span><strong>{{getName(3) | uppercase}}</strong></span>
+      </div>
     </div>
   </div>
 </div>

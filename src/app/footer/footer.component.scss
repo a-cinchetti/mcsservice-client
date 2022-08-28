@@ -26,11 +26,16 @@
   }
 }
 
-.socials {
+.nav-text {
+  cursor: pointer;
+}
+
+.certificate {
   display: flex;
   flex-direction: row;
+  background: white;
   img {
-    max-width: 2rem;
+    max-width: 20rem;
   }
 
   img:not(:last-child) {
