@@ -1,9 +1,10 @@
 <div class="header-component">
-  <div class="header-icon" (click)="goToHomepage()">
-    <span>Icon</span>
-  </div>
+  <div class="icon-svg" (click)="goToHomepage()" aria-label="My icon" [inlineSVG]="'/assets/svg/logo/icon.svg'"></div>
+<!--  <div class="left-icon-container">-->
+<!--    <div [inlineSVG]="'/assets/svg/logo/icon.svg'" class="icon-svg"></div>-->
+<!--  </div>-->
   <div class="header-pages">
-    <span (click)="goToWorksPage()">{{'i nostri lavori' | uppercase}}</span>
-    <span (click)="goToContactsPage()">{{'contatti' | uppercase}}</span>
+    <span (click)="goToWorksPage()"><strong>{{'i nostri lavori' | uppercase}}</strong></span>
+    <span (click)="goToContactsPage()"><strong>{{'contatti' | uppercase}}</strong></span>
   </div>
 </div>

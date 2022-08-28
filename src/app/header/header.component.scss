@@ -5,8 +5,19 @@
   padding: 0 4rem;
 }
 
-.header-icon {
+.icon-svg {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  ::ng-deep svg {
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+
+    path {
+      fill: #2a287c;
+    }
+  }
 }
 
 span:not(:last-child) {
@@ -15,4 +26,10 @@ span:not(:last-child) {
 
 span {
   cursor: pointer;
+  color: #2a287c;
+}
+
+.header-pages {
+  display: flex;
+  align-items: center;
 }

@@ -24,6 +24,10 @@ export class BoxFieldsComponent implements OnInit, OnChanges {
     return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.name;
   }
 
+  getType(index: number) {
+    return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.type;
+  }
+
   getStatus(index: number) {
     return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.active;
   }

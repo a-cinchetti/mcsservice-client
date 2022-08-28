@@ -9,12 +9,27 @@
           </strong>
         </span>
       </div>
-      <span class="society-summary">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-      </span>
+      <div class="society-summary">
+        <span class="about-us-1">
+          C.M. SERVICE è un’azienda che opera da anni nel settore dell’edilizia
+eseguendo opere di costruzione e ristrutturazione di edifici civili ed
+industriali, manutenzione edile ed impiantistica delle aziende.
+        </span>
+        <span class="about-us-2">
+          Inoltre, è specializzata in rifacimento facciate, trattamenti al fuoco delle strutture
+ed adeguamenti sismici.
+        </span>
+<!--        <span class="motto">-->
+<!--          Gestiamo e eseguiamo progetti dalle prime lavorazioni fino alla-->
+<!--consegna finale impiantistica compresa, ottimizzando tempi e costi.-->
+<!--        </span>-->
+        <span class="end-text">
+          Lo svolge al meglio con un continuo e severo controllo dei materiali
+utilizzati, innovativi e rispettando tutti i regolamenti e le certificazioni
+vigenti in materia.
+        </span>
+
+      </div>
       <button mat-raised-button color="primary" (click)="goToContactsPage()">
         <div class="button-contact">
           <img src="./assets/svg/contact.svg"/>
@@ -24,16 +39,19 @@
     </div>
   </div>
   <div class="fields">
-    <div class="field ristrutturazione" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
+    <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
       <span><strong>{{getName(0) | uppercase}}</strong></span>
     </div>
-    <div class="field tinteggiatura" [ngClass]="getStatus(1) ? 'active' : ''" (click)="setActiveField(1)">
+    <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="setActiveField(1)">
+      <span><strong>{{getType(1) | uppercase}}</strong></span>
       <span><strong>{{getName(1) | uppercase}}</strong></span>
     </div>
-    <div class="field nuovo" [ngClass]="getStatus(2) ? 'active' : ''" (click)="setActiveField(2)">
+    <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="setActiveField(2)">
+      <span><strong>{{getType(2) | uppercase}}</strong></span>
       <span><strong>{{getName(2) | uppercase}}</strong></span>
     </div>
-    <div class="field altro" [ngClass]="getStatus(3) ? 'active' : ''" (click)="setActiveField(3)">
+    <div class="field th4" [ngClass]="getStatus(3) ? 'active' : ''" (click)="setActiveField(3)">
+      <img src="./assets/svg/construction.svg"/>
       <span><strong>{{getName(3) | uppercase}}</strong></span>
     </div>
   </div>

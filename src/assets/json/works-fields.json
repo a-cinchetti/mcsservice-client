@@ -1,6 +1,6 @@
 [
   {
-    "name": "ristrutturazione",
+    "name": "Hangar Manzoni",
     "active": false,
     "index": 0,
     "subFields": [
@@ -38,17 +38,19 @@
     ]
   },
   {
-    "name": "tinteggiatura",
+    "type": "Nuova costruzione",
+    "name": "capannone Bruniglass",
     "active": false,
     "index": 1
   },
   {
-    "name": "nuovo",
+    "type": "Ristrutturazione",
+    "name": "uffici Berling",
     "active": false,
     "index": 2
   },
   {
-    "name": "altro",
+    "name": "Altri progetti",
     "active": false,
     "index": 3
   }

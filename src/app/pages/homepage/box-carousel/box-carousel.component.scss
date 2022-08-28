@@ -15,13 +15,17 @@
   .swiper-slide {
     background-position: center;
     background-size: cover;
+    min-width: 300px;
     max-width: 550px;
     //height: 300px;
     align-self: center;
     display: flex;
     justify-content: center;
-    &.prova {
-      max-width: 254px;
+    &.vertical-img {
+      max-width: 300px;
+    }
+    &.vertical-img-m {
+      max-width: 400px;
     }
   }
 
