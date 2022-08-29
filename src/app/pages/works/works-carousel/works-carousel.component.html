@@ -1,8 +1,34 @@
 <div class="box-carousel">
-  <div class="carousel-section">
-    <div *ngFor="let field of fields" class="carousel-field" (click)="tabSelected(field.index)"
-         [ngClass]="getStatus(field.index) ? 'active' : ''">
-      <span><strong>{{field.name | uppercase}}</strong></span>
+<!--  <div class="carousel-section">-->
+<!--    <div *ngFor="let field of fields" class="carousel-field" (click)="tabSelected(field.index)"-->
+<!--         [ngClass]="getStatus(field.index) ? 'active' : ''">-->
+<!--      <span><strong>{{field.name | uppercase}}</strong></span>-->
+<!--    </div>-->
+<!--  </div>-->
+  <div class="fields">
+    <div class="container-scale">
+      <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="tabSelected(0)"
+      >
+        <span><strong>{{getName(0) | uppercase}}</strong></span>
+      </div>
+    </div>
+    <div class="container-scale">
+      <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="tabSelected(1)">
+        <span><strong>{{getType(1) | uppercase}}</strong></span>
+        <span><strong>{{getName(1) | uppercase}}</strong></span>
+      </div>
+    </div>
+    <div class="container-scale">
+      <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="tabSelected(2)">
+        <span><strong>{{getType(2) | uppercase}}</strong></span>
+        <span><strong>{{getName(2) | uppercase}}</strong></span>
+      </div>
+    </div>
+    <div class="container-scale">
+      <div class="field th4" [ngClass]="getStatus(3) ? 'active' : ''" (click)="tabSelected(3)">
+        <img src="./assets/svg/construction.svg"/>
+        <span><strong>{{getName(3) | uppercase}}</strong></span>
+      </div>
     </div>
   </div>
   <div *ngIf="!isNumberIndexSelected()" class="empty-index">

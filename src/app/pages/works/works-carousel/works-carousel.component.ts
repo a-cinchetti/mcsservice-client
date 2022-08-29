@@ -49,6 +49,14 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
     }
   }
 
+  getName(index: number) {
+    return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.name;
+  }
+
+  getType(index: number) {
+    return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.type;
+  }
+
   tabSelected(index: any) {
     this.selected = true;
     if (this.indexSelected !== index) {
