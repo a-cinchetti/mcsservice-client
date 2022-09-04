@@ -70,12 +70,15 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
       this.indexSelected = index;
       this.resetSubFieldSelected();
       this.setImagesListByDefault();
-      this.subFieldNameSelected = "all";
+      const subFields = this.getSubFields()
+      if (subFields) {
+        this.setSubFieldSelected(subFields[0])
+      }
       this.reloadTree();
     }
   }
 
-  getSubFields() {
+  getSubFields(): any[] | null {
     if (this.indexSelected !== null && this.indexSelected !== undefined) {
       return this.fields.filter((el: { index: number; }) => el.index === this.indexSelected)[0]?.subFields;
     }

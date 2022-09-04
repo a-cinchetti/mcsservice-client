@@ -30,16 +30,14 @@
     <span> <strong>{{'SELEZIONA UN PROGETTO'}}</strong></span>
   </div>
   <div *ngIf="isNumberIndexSelected()" class="box-index-selected">
-    <div class="subField-elements" *ngIf="(getSubFields() && getSubFields().length > 1) || this.indexSelected === 3">
-      <span class="subfield-text"><strong>Seleziona una sottogategoria</strong></span>
-      <div class="subField" (click)="setSubFieldDefault()"
-           [ngClass]="getStatusSubfield('all') ? 'active' : ''">
-        <span>{{ "mostra tutto" | uppercase}}</span>
-      </div>
-      <div *ngFor="let subField of getSubFields()" class="subField" (click)="setSubFieldSelected(subField)"
-           [ngClass]="getStatusSubfield(subField.name) ? 'active' : ''">
-        <span>{{subField.name | uppercase}}</span>
-      </div>
+    <div class="subField-elements" *ngIf="(getSubFields() && getSubFields()!!.length > 1) || this.indexSelected === 3">
+      <span class="subfield-text"><strong>Seleziona una categoria</strong></span>
+        <div class="subfields-buttons">
+            <div *ngFor="let subField of getSubFields()" class="subField" (click)="setSubFieldSelected(subField)"
+                 [ngClass]="getStatusSubfield(subField.name) ? 'active' : ''">
+              <span class="subfield-button-text">{{subField.name | uppercase}}</span>
+            </div>
+          </div>
     </div>
       <app-img-container [imagesList]="this.imagesList" *ngIf="this.enabled && this.imagesList.length > 0"></app-img-container>
   </div>

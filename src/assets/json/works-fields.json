@@ -134,8 +134,8 @@
           "./assets/img/works/altro/cappotti/cappotti_9.jpg",
           "./assets/img/works/altro/cappotti/cappotti_10.jpg",
           "./assets/img/works/altro/cappotti/cappotti_11.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_12.jpg",
           "./assets/img/works/altro/cappotti/cappotti_13.jpg",
-          "./assets/img/works/altro/cappotti/cappotti_11.jpg",
           "./assets/img/works/altro/cappotti/cappotti_14.jpg",
           "./assets/img/works/altro/cappotti/cappotti_15.jpg",
           "./assets/img/works/altro/cappotti/cappotti_16.jpg",
@@ -147,20 +147,72 @@
         ]
       },
       {
-        "name": "ristrutturazione solaio",
+        "name": "manutenzione aziende",
         "images": [
-          "https://swiperjs.com/demos/images/nature-4.jpg",
-          "https://swiperjs.com/demos/images/nature-5.jpg",
-          "https://swiperjs.com/demos/images/nature-6.jpg",
-          "./assets/img/homepage2.jpeg"
+          "./assets/img/works/altro/manutenzione/manutenzione_1.jpg",
+          "./assets/img/works/altro/manutenzione/manutenzione_2.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_3.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_4.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_5.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_6.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_7.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_8.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_9.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_10.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_11.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_12.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_13.jpeg",
+          "./assets/img/works/altro/manutenzione/manutenzione_14.jpg",
+          "./assets/img/works/altro/manutenzione/manutenzione_15.jpg",
+          "./assets/img/works/altro/manutenzione/manutenzione_16.jpg",
+          "./assets/img/works/altro/manutenzione/manutenzione_17.jpg",
+          "./assets/img/works/altro/manutenzione/manutenzione_18.jpg",
+          "./assets/img/works/altro/manutenzione/manutenzione_19.jpg",
+          "./assets/img/works/altro/manutenzione/manutenzione_20.jpg"
         ]
       },
       {
-        "name": "ristrutturazione cantina",
+        "name": "nuove coperture",
         "images": [
-          "https://swiperjs.com/demos/images/nature-7.jpg",
-          "https://swiperjs.com/demos/images/nature-8.jpg",
-          "https://swiperjs.com/demos/images/nature-9.jpg"
+          "./assets/img/works/altro/coperture/coperture_1.jpeg",
+          "./assets/img/works/altro/coperture/coperture_2.jpeg",
+          "./assets/img/works/altro/coperture/coperture_3.jpeg",
+          "./assets/img/works/altro/coperture/coperture_4.jpg",
+          "./assets/img/works/altro/coperture/coperture_5.jpeg",
+          "./assets/img/works/altro/coperture/coperture_6.jpeg",
+          "./assets/img/works/altro/coperture/coperture_7.jpeg",
+          "./assets/img/works/altro/coperture/coperture_8.jpg"
+        ]
+      },
+      {
+        "name": "resine e segneletica orizzontale",
+        "images": [
+          "./assets/img/works/altro/resine/resine_1.JPG",
+          "./assets/img/works/altro/resine/resine_2.jpg",
+          "./assets/img/works/altro/resine/resine_3.jpg",
+          "./assets/img/works/altro/resine/resine_4.jpg",
+          "./assets/img/works/altro/resine/resine_5.jpg",
+          "./assets/img/works/altro/resine/resine_6.jpeg",
+          "./assets/img/works/altro/resine/resine_7.jpeg",
+          "./assets/img/works/altro/resine/resine_8.jpeg",
+          "./assets/img/works/altro/resine/resine_9.jpeg",
+          "./assets/img/works/altro/resine/resine_10.jpeg",
+          "./assets/img/works/altro/resine/resine_11.jpeg",
+          "./assets/img/works/altro/resine/resine_12.jpeg",
+          "./assets/img/works/altro/resine/resine_13.jpg",
+          "./assets/img/works/altro/resine/resine_14.jpeg",
+          "./assets/img/works/altro/resine/resine_15.jpg",
+          "./assets/img/works/altro/resine/resine_16.jpeg",
+          "./assets/img/works/altro/resine/resine_17.jpg"
+        ]
+      },
+      {
+        "name": "riqualificazione condomini",
+        "images": [
+          "./assets/img/works/altro/condomini/condomini_1.jpg",
+          "./assets/img/works/altro/condomini/condomini_2.jpg",
+          "./assets/img/works/altro/condomini/condomini_3.jpg",
+          "./assets/img/works/altro/condomini/condomini_4.jpg"
         ]
       }
     ]

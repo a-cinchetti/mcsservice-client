@@ -91,7 +91,7 @@
 .subField-elements {
   display: flex;
   flex-direction: row;
-  padding: 3rem 4rem 0 4rem;
+  padding: 3rem 0 0 0;
   //margin-top: 2rem;
   align-items: center;
 }
@@ -99,7 +99,14 @@
 .subfield-text {
   font-size: 1.2rem;
   color: #242e5b;
-  margin-right: 2rem;
+  padding-bottom: 2rem;
+  width: 30%;
+  text-align: center;
+}
+
+.subfield-button-text {
+  white-space: normal;
+  text-align: center;
 }
 
 .subField {
@@ -112,10 +119,17 @@
   align-items: center;
   height: 3.5rem;
   cursor: pointer;
+  margin-bottom: 2rem;
   &.active {
     background-color: #374785;
     color: white;
   }
+}
+
+.subfields-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
 }
 
 .subField-separator {
