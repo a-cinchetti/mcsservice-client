@@ -31,7 +31,31 @@
     "type": "Nuova costruzione",
     "name": "capannone Bruniglass",
     "active": false,
-    "index": 1
+    "index": 1,
+    "subFields": [
+      {
+        "name": "all",
+        "images": [
+          "./assets/img/works/bruniglass/bruniglass_1.jpg",
+          "./assets/img/works/bruniglass/bruniglass_2.jpg",
+          "./assets/img/works/bruniglass/bruniglass_3.jpg",
+          "./assets/img/works/bruniglass/bruniglass_4.jpg",
+          "./assets/img/works/bruniglass/bruniglass_5.jpg",
+          "./assets/img/works/bruniglass/bruniglass_6.jpeg",
+          "./assets/img/works/bruniglass/bruniglass_7.jpg",
+          "./assets/img/works/bruniglass/bruniglass_8.jpg",
+          "./assets/img/works/bruniglass/bruniglass_9.jpeg",
+          "./assets/img/works/bruniglass/bruniglass_10.jpeg",
+          "./assets/img/works/bruniglass/bruniglass_11.jpeg",
+          "./assets/img/works/bruniglass/bruniglass_12.jpg",
+          "./assets/img/works/bruniglass/bruniglass_13.jpg",
+          "./assets/img/works/bruniglass/bruniglass_14.jpeg",
+          "./assets/img/works/bruniglass/bruniglass_15.jpeg",
+          "./assets/img/works/bruniglass/bruniglass_16.jpg",
+          "./assets/img/works/bruniglass/bruniglass_17.jpg"
+        ]
+      }
+    ]
   },
   {
     "type": "Ristrutturazione",
@@ -74,17 +98,52 @@
     "index": 3,
     "subFields": [
       {
-        "name": "ristrutturazione interni",
+        "name": "Sistemi a secco",
         "images": [
-          "https://swiperjs.com/demos/images/nature-1.jpg",
-          "https://swiperjs.com/demos/images/nature-2.jpg",
-          "./assets/img/iphone.jpg"
+          "./assets/img/works/altro/secco/secco_1.jpg",
+          "./assets/img/works/altro/secco/secco_2.jpg",
+          "./assets/img/works/altro/secco/secco_3.jpg",
+          "./assets/img/works/altro/secco/secco_4.jpg",
+          "./assets/img/works/altro/secco/secco_5.jpg",
+          "./assets/img/works/altro/secco/secco_6.jpg",
+          "./assets/img/works/altro/secco/secco_7.jpg",
+          "./assets/img/works/altro/secco/secco_8.jpg",
+          "./assets/img/works/altro/secco/secco_9.jpg",
+          "./assets/img/works/altro/secco/secco_10.jpg",
+          "./assets/img/works/altro/secco/secco_11.jpg",
+          "./assets/img/works/altro/secco/secco_13.jpg",
+          "./assets/img/works/altro/secco/secco_14.jpg",
+          "./assets/img/works/altro/secco/secco_15.jpg",
+          "./assets/img/works/altro/secco/secco_16.jpg",
+          "./assets/img/works/altro/secco/secco_17.jpg",
+          "./assets/img/works/altro/secco/secco_18.jpg",
+          "./assets/img/works/altro/secco/secco_19.jpg"
         ]
       },
       {
-        "name": "ristrutturazione esterni",
+        "name": "cappotti e verniciature",
         "images": [
-          "https://swiperjs.com/demos/images/nature-3.jpg"
+          "./assets/img/works/altro/cappotti/cappotti_1.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_2.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_3.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_4.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_5.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_6.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_7.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_8.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_9.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_10.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_11.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_13.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_11.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_14.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_15.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_16.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_17.jpg",
+          "./assets/img/works/altro/cappotti/cappotti_18.jpeg",
+          "./assets/img/works/altro/cappotti/cappotti_19.jpeg",
+          "./assets/img/works/altro/cappotti/cappotti_20.jpeg",
+          "./assets/img/works/altro/cappotti/cappotti_21.jpg"
         ]
       },
       {
