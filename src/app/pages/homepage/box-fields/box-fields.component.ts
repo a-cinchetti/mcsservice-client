@@ -36,7 +36,8 @@ export class BoxFieldsComponent implements OnInit, OnChanges {
     this.fields.forEach( (el: { active: boolean; index: number; }) => {
         el.active = el.index === index;
     })
-    this.router.navigate(["/works", {workIndex: index}])
+    sessionStorage.setItem("index", String(index))
+    this.router.navigate(["/works"])
   }
 
   goToContactsPage() {

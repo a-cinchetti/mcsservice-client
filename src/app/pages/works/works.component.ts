@@ -11,14 +11,15 @@ export class WorksComponent implements OnInit {
   index: number | undefined;
   fields = [];
 
-  constructor(private route: ActivatedRoute) {
+  constructor() {
   }
 
   ngOnInit(): void {
-    //TODO usare il locale storage invece del path param
-    if (this.route.snapshot.paramMap.get("workIndex") !== null && this.route.snapshot.paramMap.get("workIndex") !== undefined) {
-      this.index = Number(this.route.snapshot.paramMap.get("workIndex"));
+    if (sessionStorage.getItem("index")) {
+      this.index = Number(sessionStorage.getItem("index"))
     }
+    sessionStorage.removeItem("index");
+
     fetch('./assets/json/works-fields.json').then(res => res.json())
       .then(jsonData => {
         this.fields = jsonData;

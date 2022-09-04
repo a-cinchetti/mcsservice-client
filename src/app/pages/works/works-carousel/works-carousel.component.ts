@@ -32,6 +32,10 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
       if (!this.subFieldSelected) {
         this.setImagesListByDefault();
       }
+      const subFields = this.getSubFields()
+      if (subFields) {
+        this.setSubFieldSelected(subFields[0])
+      }
     }
   }
 
