@@ -1,10 +1,4 @@
 <div class="box-carousel">
-<!--  <div class="carousel-section">-->
-<!--    <div *ngFor="let field of fields" class="carousel-field" (click)="tabSelected(field.index)"-->
-<!--         [ngClass]="getStatus(field.index) ? 'active' : ''">-->
-<!--      <span><strong>{{field.name | uppercase}}</strong></span>-->
-<!--    </div>-->
-<!--  </div>-->
   <div class="fields">
     <div class="container-scale">
       <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="tabSelected(0)"
@@ -36,14 +30,17 @@
     <span> <strong>{{'SELEZIONA UN PROGETTO'}}</strong></span>
   </div>
   <div *ngIf="isNumberIndexSelected()" class="box-index-selected">
-    <div class="subField-column">
+    <div class="subField-elements" *ngIf="(getSubFields() && getSubFields().length > 1) || this.indexSelected === 3">
+      <span class="subfield-text"><strong>Seleziona una sottogategoria</strong></span>
+      <div class="subField" (click)="setSubFieldDefault()"
+           [ngClass]="getStatusSubfield('all') ? 'active' : ''">
+        <span>{{ "mostra tutto" | uppercase}}</span>
+      </div>
       <div *ngFor="let subField of getSubFields()" class="subField" (click)="setSubFieldSelected(subField)"
            [ngClass]="getStatusSubfield(subField.name) ? 'active' : ''">
         <span>{{subField.name | uppercase}}</span>
       </div>
     </div>
-    <div class="subField-separator"></div>
-    <app-img-container [imagesList]="this.imagesList" *ngIf="this.imagesList.length > 0 "></app-img-container>
-<!--    <app-img-container-new></app-img-container-new>-->
+      <app-img-container [imagesList]="this.imagesList" *ngIf="this.enabled && this.imagesList.length > 0"></app-img-container>
   </div>
 </div>

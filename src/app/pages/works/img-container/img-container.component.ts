@@ -1,11 +1,6 @@
-import {
-  Component,
-  Input,
-  OnInit,
-  ViewEncapsulation
-} from '@angular/core';
-import SwiperCore, {Pagination, Navigation, SwiperOptions} from 'swiper';
-import Swiper from "swiper";
+import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
+import SwiperCore from 'swiper';
+import Swiper, {Navigation, Pagination} from 'swiper';
 
 SwiperCore.use([Pagination, Navigation]);
 
@@ -25,13 +20,11 @@ export class ImgContainerComponent implements OnInit {
   constructor() {
   }
 
+
   ngOnInit(): void {
-    console.log(this.imagesList)
     if (this.imagesList?.length == 1) {
-      console.log("eccomi")
       this.paginationConfig = false;
       this.navigationConfig = false;
     }
   }
-
 }

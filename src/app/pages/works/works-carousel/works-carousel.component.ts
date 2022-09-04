@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {ChangeDetectorRef, Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-works-carousel',
@@ -14,9 +14,15 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
   private selected: boolean = false;
   private subFieldSelected: boolean = false;
   private subFieldNameSelected: any;
+  enabled: boolean = true;
   imagesList: string[] = [];
 
-  constructor() {
+  constructor(private changeDetector: ChangeDetectorRef){}
+
+  reloadTree(){
+    this.enabled = false;
+    this.changeDetector.detectChanges();
+    this.enabled = true;
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -64,6 +70,8 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
       this.indexSelected = index;
       this.resetSubFieldSelected();
       this.setImagesListByDefault();
+      this.subFieldNameSelected = "all";
+      this.reloadTree();
     }
   }
 
@@ -102,9 +110,13 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
     if (this.subFieldNameSelected !== subField.name) {
       this.subFieldNameSelected = subField.name;
       this.setImagesListBySubFields(subField.images);
-    } else {
-      this.setImagesListByDefault();
-      this.subFieldNameSelected = null;
+      this.reloadTree();
     }
+  }
+
+  setSubFieldDefault() {
+    this.setImagesListByDefault();
+    this.subFieldNameSelected = "all";
+    this.reloadTree();
   }
 }

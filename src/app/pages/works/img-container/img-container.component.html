@@ -1,7 +1,8 @@
-<div class="img-container-box" *ngIf="this.imagesList?.length != 1">
+<div class="img-container-box" *ngIf="this.imagesList?.length != 1" >
   <swiper
     [slidesPerView]="1"
     [spaceBetween]="10"
+    [initialSlide]="0"
     [loop]="true"
     [pagination]="{
       clickable: true

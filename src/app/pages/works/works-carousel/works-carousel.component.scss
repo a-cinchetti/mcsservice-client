@@ -4,6 +4,39 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  ::ng-deep .swiper-button-next {
+    background-color: #e7e6e6;
+    padding: 1rem;
+    width: 30px;
+    height: 30px;
+  }
+
+  ::ng-deep .swiper-button-prev {
+    background-color: #e7e6e6;
+    padding: 1rem;
+    width: 30px;
+    height: 30px;
+  }
+
+  ::ng-deep .swiper-button-prev:after {
+    font-size: 25px;
+  }
+
+  ::ng-deep .swiper-button-next:after {
+    font-size: 25px;
+  }
+
+  ::ng-deep.swiper-button-prev {
+    color: #374785 !important;
+  }
+
+  ::ng-deep.swiper-button-next {
+    color: #374785 !important;
+  }
+
+  ::ng-deep.swiper-pagination-bullet-active {
+    background: #374785 !important;
+  }
 }
 
 .carousel-section {
@@ -22,7 +55,8 @@
   justify-content: center;
   cursor: pointer;
   font-size: 18px;
-  box-shadow: 0 0 3px #999999;
+  //box-shadow: 0 0 3px #999999;
+  border: 2px solid  #999999;
 
   &.active {
     background-color: #374785;
@@ -51,52 +85,48 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.subField-column {
+.subField-elements {
   display: flex;
-  flex-direction: column;
-  padding: 3rem 4rem;
-  margin-top: 2rem;
+  flex-direction: row;
+  padding: 3rem 4rem 0 4rem;
+  //margin-top: 2rem;
+  align-items: center;
+}
+
+.subfield-text {
+  font-size: 1.2rem;
+  color: #242e5b;
+  margin-right: 2rem;
 }
 
 .subField {
   display: flex;
   width: 15rem;
-  box-shadow: 0 0 3px #999999;
-  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  border: 1px solid #cccccc;
+  margin-right: 2.5rem;
   justify-content: center;
   align-items: center;
-  height: 2.5rem;
+  height: 3.5rem;
   cursor: pointer;
   &.active {
-    background-color: #F76C6C;
+    background-color: #374785;
     color: white;
   }
 }
 
 .subField-separator {
-  margin: 3rem 0 10rem 0;
+  margin: 0 0 1rem 0;
   width: 2px;
   background-color: #CCCCCC;
 }
 
 app-img-container {
   min-width: 0;
-  margin: 2rem 0 10rem 0;
-}
-
-::ng-deep.swiper-button-prev {
-  color: #374785 !important;
-}
-
-::ng-deep.swiper-button-next {
-  color: #374785 !important;
-}
-
-::ng-deep.swiper-pagination-bullet-active {
-  background: #374785 !important;
+  margin: 4rem 0 4rem 0;
 }
 
 .fields {

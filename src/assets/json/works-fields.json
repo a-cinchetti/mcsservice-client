@@ -5,6 +5,75 @@
     "index": 0,
     "subFields": [
       {
+        "name": "all",
+        "images": [
+          "./assets/img/works/hangarManzoni/hangar_1.jpeg",
+          "./assets/img/works/hangarManzoni/hangar_2.jpeg",
+          "./assets/img/works/hangarManzoni/hangar_3.jpeg",
+          "./assets/img/works/hangarManzoni/hangar_4.jpg",
+          "./assets/img/works/hangarManzoni/hangar_5.jpg",
+          "./assets/img/works/hangarManzoni/hangar_6.jpg",
+          "./assets/img/works/hangarManzoni/hangar_7.jpg",
+          "./assets/img/works/hangarManzoni/hangar_8.jpg",
+          "./assets/img/works/hangarManzoni/hangar_9.jpg",
+          "./assets/img/works/hangarManzoni/hangar_10.jpg",
+          "./assets/img/works/hangarManzoni/hangar_11.jpg",
+          "./assets/img/works/hangarManzoni/hangar_12.jpg",
+          "./assets/img/works/hangarManzoni/hangar_13.jpg",
+          "./assets/img/works/hangarManzoni/hangar_14.jpg",
+          "./assets/img/works/hangarManzoni/hangar_15.jpg",
+          "./assets/img/works/hangarManzoni/hangar_16.jpeg"
+          ]
+      }
+    ]
+  },
+  {
+    "type": "Nuova costruzione",
+    "name": "capannone Bruniglass",
+    "active": false,
+    "index": 1
+  },
+  {
+    "type": "Ristrutturazione",
+    "name": "uffici Berling",
+    "active": false,
+    "index": 2,
+    "subFields": [
+      {
+        "name": "all",
+        "images": [
+          "./assets/img/works/berling/berling_1.jpeg",
+          "./assets/img/works/berling/berling_2.jpg",
+          "./assets/img/works/berling/berling_3.jpeg",
+          "./assets/img/works/berling/berling_4.jpg",
+          "./assets/img/works/berling/berling_5.jpg",
+          "./assets/img/works/berling/berling_6.jpg",
+          "./assets/img/works/berling/berling_7.jpg",
+          "./assets/img/works/berling/berling_8.jpg",
+          "./assets/img/works/berling/berling_9.jpg",
+          "./assets/img/works/berling/berling_10.jpg",
+          "./assets/img/works/berling/berling_11.jpg",
+          "./assets/img/works/berling/berling_12.jpg",
+          "./assets/img/works/berling/berling_13.jpg",
+          "./assets/img/works/berling/berling_14.jpg",
+          "./assets/img/works/berling/berling_15.jpg",
+          "./assets/img/works/berling/berling_16.jpg",
+          "./assets/img/works/berling/berling_17.jpg",
+          "./assets/img/works/berling/berling_18.jpg",
+          "./assets/img/works/berling/berling_19.jpg",
+          "./assets/img/works/berling/berling_20.jpg",
+          "./assets/img/works/berling/berling_21.jpg",
+          "./assets/img/works/berling/berling_22.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Altri progetti",
+    "active": false,
+    "index": 3,
+    "subFields": [
+      {
         "name": "ristrutturazione interni",
         "images": [
           "https://swiperjs.com/demos/images/nature-1.jpg",
@@ -36,22 +105,5 @@
         ]
       }
     ]
-  },
-  {
-    "type": "Nuova costruzione",
-    "name": "capannone Bruniglass",
-    "active": false,
-    "index": 1
-  },
-  {
-    "type": "Ristrutturazione",
-    "name": "uffici Berling",
-    "active": false,
-    "index": 2
-  },
-  {
-    "name": "Altri progetti",
-    "active": false,
-    "index": 3
   }
 ]
