@@ -1,7 +1,7 @@
 <div class="map-container">
   <google-map [center]="mapCenter" [options]="mapOptions" [width]="'100%'">
     <map-marker
-      (mapClick)="prova()"
+      (mapClick)="externalMap()"
       [position]="marker.position"
       [label]="marker.label"
       [title]="marker.title"
