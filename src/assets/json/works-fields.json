@@ -168,29 +168,6 @@
     "index": 5,
     "subFields": [
       {
-        "name": "Sistemi a secco",
-        "images": [
-          "./assets/img/works/altro/secco/secco_1.jpg",
-          "./assets/img/works/altro/secco/secco_2.jpg",
-          "./assets/img/works/altro/secco/secco_3.jpg",
-          "./assets/img/works/altro/secco/secco_4.jpg",
-          "./assets/img/works/altro/secco/secco_5.jpg",
-          "./assets/img/works/altro/secco/secco_6.jpg",
-          "./assets/img/works/altro/secco/secco_7.jpg",
-          "./assets/img/works/altro/secco/secco_8.jpg",
-          "./assets/img/works/altro/secco/secco_9.jpg",
-          "./assets/img/works/altro/secco/secco_10.jpg",
-          "./assets/img/works/altro/secco/secco_11.jpg",
-          "./assets/img/works/altro/secco/secco_13.jpg",
-          "./assets/img/works/altro/secco/secco_14.jpg",
-          "./assets/img/works/altro/secco/secco_15.jpg",
-          "./assets/img/works/altro/secco/secco_16.jpg",
-          "./assets/img/works/altro/secco/secco_17.jpg",
-          "./assets/img/works/altro/secco/secco_18.jpg",
-          "./assets/img/works/altro/secco/secco_19.jpg"
-        ]
-      },
-      {
         "name": "cappotti e verniciature",
         "images": [
           "./assets/img/works/altro/cappotti/cappotti_1.jpg",
@@ -214,31 +191,6 @@
           "./assets/img/works/altro/cappotti/cappotti_19.jpeg",
           "./assets/img/works/altro/cappotti/cappotti_20.jpeg",
           "./assets/img/works/altro/cappotti/cappotti_21.jpg"
-        ]
-      },
-      {
-        "name": "manutenzione aziende",
-        "images": [
-          "./assets/img/works/altro/manutenzione/manutenzione_1.jpg",
-          "./assets/img/works/altro/manutenzione/manutenzione_2.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_3.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_4.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_5.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_6.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_7.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_8.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_9.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_10.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_11.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_12.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_13.jpeg",
-          "./assets/img/works/altro/manutenzione/manutenzione_14.jpg",
-          "./assets/img/works/altro/manutenzione/manutenzione_15.jpg",
-          "./assets/img/works/altro/manutenzione/manutenzione_16.jpg",
-          "./assets/img/works/altro/manutenzione/manutenzione_17.jpg",
-          "./assets/img/works/altro/manutenzione/manutenzione_18.jpg",
-          "./assets/img/works/altro/manutenzione/manutenzione_19.jpg",
-          "./assets/img/works/altro/manutenzione/manutenzione_20.jpg"
         ]
       },
       {

@@ -26,6 +26,7 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    console.log("eccomi")
     if (this.indexSelected !== null && this.indexSelected !== undefined) {
       this.selected = true;
       this.setActiveField(this.indexSelected);
@@ -61,6 +62,10 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
 
   getName(index: number) {
     return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.name;
+  }
+
+  getLocation(index: number) {
+    return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.location;
   }
 
   getType(index: number) {
