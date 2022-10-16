@@ -106,5 +106,7 @@
       }
     }
   },
-  "defaultProject": "mcsservice-client"
+  "cli": {
+    "analytics": "0f77cacd-ca43-49f4-85b5-1b6979667bed"
+  }
 }
