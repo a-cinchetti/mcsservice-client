@@ -1,0 +1,11 @@
+.map-container {
+  display: flex;
+  margin: 2rem 0 10rem;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+google-map {
+  width: 100%
+}

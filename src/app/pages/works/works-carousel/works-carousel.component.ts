@@ -26,7 +26,6 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log("eccomi")
     if (this.indexSelected !== null && this.indexSelected !== undefined) {
       this.selected = true;
       this.setActiveField(this.indexSelected);
