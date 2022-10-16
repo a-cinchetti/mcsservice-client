@@ -1,18 +1,16 @@
 .footer {
   bottom:0;
-  margin: 0 6%;
   //width:100%;
   /*height: 5rem;*/
   background: #24305E;
   z-index: 3;
-  padding: 0 6rem;
 }
 
 .wrapper-component {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #dcecf8;
+  //background-color: #dcecf8;
 }
 
 .router-wrapper {

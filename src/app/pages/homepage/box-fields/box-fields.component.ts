@@ -1,5 +1,5 @@
 import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
-import { Router } from '@angular/router';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-box-fields',
@@ -22,6 +22,10 @@ export class BoxFieldsComponent implements OnInit, OnChanges {
 
   getName(index: number) {
     return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.name;
+  }
+
+  getLocation(index: number) {
+    return this.fields.filter((el: { index: number; }) => el.index === index)[0]?.location;
   }
 
   getType(index: number) {

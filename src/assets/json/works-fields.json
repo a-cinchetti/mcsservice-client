@@ -1,6 +1,8 @@
 [
   {
+    "type": "Riqualificazione",
     "name": "Hangar Manzoni",
+    "location": "Lecco",
     "active": false,
     "index": 0,
     "subFields": [
@@ -30,6 +32,7 @@
   {
     "type": "Nuova costruzione",
     "name": "capannone Bruniglass",
+    "location": "Trezzano sul Naviglio",
     "active": false,
     "index": 1,
     "subFields": [
@@ -59,7 +62,8 @@
   },
   {
     "type": "Ristrutturazione",
-    "name": "uffici Berling",
+    "name": "Berling Packaging",
+    "location": "Albaredo d'Adige",
     "active": false,
     "index": 2,
     "subFields": [
@@ -93,9 +97,75 @@
     ]
   },
   {
-    "name": "Altri progetti",
+    "type": "Nuova sede",
+    "name": "Berling Packaging",
+    "location": "Trezzano sul Naviglio",
     "active": false,
     "index": 3,
+    "subFields": [
+      {
+        "name": "all",
+        "images": [
+          "./assets/img/works/nuovoBerling/secco_1.jpg",
+          "./assets/img/works/nuovoBerling/secco_2.jpg",
+          "./assets/img/works/nuovoBerling/secco_3.jpg",
+          "./assets/img/works/nuovoBerling/secco_4.jpg",
+          "./assets/img/works/nuovoBerling/secco_5.jpg",
+          "./assets/img/works/nuovoBerling/secco_6.jpg",
+          "./assets/img/works/nuovoBerling/secco_7.jpg",
+          "./assets/img/works/nuovoBerling/secco_9.jpg",
+          "./assets/img/works/nuovoBerling/secco_10.jpg",
+          "./assets/img/works/nuovoBerling/secco_11.jpg",
+          "./assets/img/works/nuovoBerling/secco_13.jpg",
+          "./assets/img/works/nuovoBerling/secco_14.jpg",
+          "./assets/img/works/nuovoBerling/secco_15.jpg",
+          "./assets/img/works/nuovoBerling/secco_16.jpg",
+          "./assets/img/works/nuovoBerling/secco_17.jpg",
+          "./assets/img/works/nuovoBerling/secco_18.jpg",
+          "./assets/img/works/nuovoBerling/secco_19.jpg",
+          "./assets/img/works/nuovoBerling/secco_20.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Manutenzione",
+    "name": "Jazz Pharmaceuticals",
+    "location": "Villa guardia",
+    "active": false,
+    "index": 4,
+    "subFields": [
+      {
+        "name": "all",
+        "images": [
+          "./assets/img/works/pharma/manutenzione_1.jpg",
+          "./assets/img/works/pharma/manutenzione_2.jpeg",
+          "./assets/img/works/pharma/manutenzione_3.jpeg",
+          "./assets/img/works/pharma/manutenzione_4.jpeg",
+          "./assets/img/works/pharma/manutenzione_5.jpeg",
+          "./assets/img/works/pharma/manutenzione_6.jpeg",
+          "./assets/img/works/pharma/manutenzione_7.jpeg",
+          "./assets/img/works/pharma/manutenzione_8.jpeg",
+          "./assets/img/works/pharma/manutenzione_9.jpeg",
+          "./assets/img/works/pharma/manutenzione_10.jpeg",
+          "./assets/img/works/pharma/manutenzione_11.jpeg",
+          "./assets/img/works/pharma/manutenzione_12.jpeg",
+          "./assets/img/works/pharma/manutenzione_13.jpeg",
+          "./assets/img/works/pharma/manutenzione_14.jpg",
+          "./assets/img/works/pharma/manutenzione_15.jpg",
+          "./assets/img/works/pharma/manutenzione_16.jpg",
+          "./assets/img/works/pharma/manutenzione_17.jpg",
+          "./assets/img/works/pharma/manutenzione_18.jpg",
+          "./assets/img/works/pharma/manutenzione_19.jpg",
+          "./assets/img/works/pharma/manutenzione_20.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Altri progetti",
+    "active": false,
+    "index": 5,
     "subFields": [
       {
         "name": "Sistemi a secco",

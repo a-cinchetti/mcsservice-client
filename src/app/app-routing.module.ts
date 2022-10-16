@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: '',
     component: HomepageComponent,
-    loadChildren: () => import('./pages/homepage/homepage.module').then(m => m.HomepageModule)
+    loadChildren: () => import('./pages/homepage/homepage.module').then(m => m.HomepageModule),
   },
   {
     path: 'works',
@@ -24,7 +24,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: "enabled"})],
   exports: [RouterModule]
 })
 export class AppRoutingModule {

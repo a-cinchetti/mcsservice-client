@@ -5,11 +5,12 @@
 @import "~swiper/scss/navigation";
 .container-carousel {
   padding: 6rem;
-  background-color: #F8E9A1;
+  border-radius: 1rem;
+  margin: 2rem 0;
   .swiper {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .swiper-slide {
