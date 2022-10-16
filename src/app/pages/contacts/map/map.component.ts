@@ -22,8 +22,8 @@ export class MapComponent implements OnInit {
       draggable: false
     }
     this.mapCenter = {
-      lat: 45.71653508408972,
-      lng: 9.886690557846206,
+      lat: 45.716831,
+      lng: 9.887333,
     }
 
     this.marker = {
