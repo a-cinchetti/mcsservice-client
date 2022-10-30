@@ -5,12 +5,12 @@ import Swiper, {Navigation, Pagination} from 'swiper';
 SwiperCore.use([Pagination, Navigation]);
 
 @Component({
-  selector: 'app-img-container',
-  templateUrl: './img-container.component.html',
-  styleUrls: ['./img-container.component.scss'],
+  selector: 'app-box-carousel-mobile',
+  templateUrl: './box-carousel-mobile.component.html',
+  styleUrls: ['./box-carousel-mobile.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ImgContainerComponent implements OnInit {
+export class BoxCarouselMobileComponent implements OnInit {
   @Input()
   mobile: boolean = false;
   @Input()

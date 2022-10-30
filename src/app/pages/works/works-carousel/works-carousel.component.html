@@ -1,47 +1,149 @@
 <div class="box-carousel">
-  <div class="fields">
-    <div class="row">
-      <div class="container-scale">
-        <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="tabSelected(0)">
-          <span><strong>{{getType(0) | uppercase}}</strong></span>
-          <span><strong>{{getName(0) | uppercase}}</strong></span>
-          <span class="location"><strong>{{getLocation(0) | uppercase}}</strong></span>
+  <div class="large">
+    <div class="fields">
+      <div class="row">
+        <div class="container-scale">
+          <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="tabSelected(0)">
+            <span><strong>{{getType(0) | uppercase}}</strong></span>
+            <span><strong>{{getName(0) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(0) | uppercase}}</strong></span>
+          </div>
+        </div>
+        <div class="container-scale">
+          <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="tabSelected(1)">
+            <span><strong>{{getType(1) | uppercase}}</strong></span>
+            <span><strong>{{getName(1) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(1) | uppercase}}</strong></span>
+          </div>
+        </div>
+        <div class="container-scale">
+          <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="tabSelected(2)">
+            <span><strong>{{getType(2) | uppercase}}</strong></span>
+            <span><strong>{{getName(2) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(2) | uppercase}}</strong></span>
+          </div>
         </div>
       </div>
-      <div class="container-scale">
-        <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="tabSelected(1)">
-          <span><strong>{{getType(1) | uppercase}}</strong></span>
-          <span><strong>{{getName(1) | uppercase}}</strong></span>
-          <span class="location"><strong>{{getLocation(1) | uppercase}}</strong></span>
+      <div class="row">
+        <div class="container-scale">
+          <div class="field th5" [ngClass]="getStatus(3) ? 'active' : ''" (click)="tabSelected(3)">
+            <span><strong>{{getType(3) | uppercase}}</strong></span>
+            <span><strong>{{getName(3) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(3) | uppercase}}</strong></span>
+          </div>
         </div>
-      </div>
-      <div class="container-scale">
-        <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="tabSelected(2)">
-          <span><strong>{{getType(2) | uppercase}}</strong></span>
-          <span><strong>{{getName(2) | uppercase}}</strong></span>
-          <span class="location"><strong>{{getLocation(2) | uppercase}}</strong></span>
+        <div class="container-scale">
+          <div class="field th6" [ngClass]="getStatus(4) ? 'active' : ''" (click)="tabSelected(4)">
+            <span><strong>{{getType(4) | uppercase}}</strong></span>
+            <span><strong>{{getName(4) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(4) | uppercase}}</strong></span>
+          </div>
+        </div>
+        <div class="container-scale">
+          <div class="field th4" [ngClass]="getStatus(5) ? 'active' : ''" (click)="tabSelected(5)">
+            <img src="./assets/svg/construction.svg"/>
+            <span><strong>{{getName(5) | uppercase}}</strong></span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="container-scale">
-        <div class="field th5" [ngClass]="getStatus(3) ? 'active' : ''" (click)="tabSelected(3)">
-          <span><strong>{{getType(3) | uppercase}}</strong></span>
-          <span><strong>{{getName(3) | uppercase}}</strong></span>
-          <span class="location"><strong>{{getLocation(3) | uppercase}}</strong></span>
+  </div>
+  <div class="medium">
+    <div class="fields">
+      <div class="row">
+        <div class="container-scale">
+          <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="tabSelected(0)">
+            <span><strong>{{getType(0) | uppercase}}</strong></span>
+            <span><strong>{{getName(0) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(0) | uppercase}}</strong></span>
+          </div>
+        </div>
+        <div class="container-scale">
+          <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="tabSelected(1)">
+            <span><strong>{{getType(1) | uppercase}}</strong></span>
+            <span><strong>{{getName(1) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(1) | uppercase}}</strong></span>
+          </div>
         </div>
       </div>
-      <div class="container-scale">
-        <div class="field th6" [ngClass]="getStatus(4) ? 'active' : ''" (click)="tabSelected(4)">
-          <span><strong>{{getType(4) | uppercase}}</strong></span>
-          <span><strong>{{getName(4) | uppercase}}</strong></span>
-          <span class="location"><strong>{{getLocation(4) | uppercase}}</strong></span>
+      <div class="row">
+        <div class="container-scale">
+          <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="tabSelected(2)">
+            <span><strong>{{getType(2) | uppercase}}</strong></span>
+            <span><strong>{{getName(2) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(2) | uppercase}}</strong></span>
+          </div>
+        </div>
+        <div class="container-scale">
+          <div class="field th5" [ngClass]="getStatus(3) ? 'active' : ''" (click)="tabSelected(3)">
+            <span><strong>{{getType(3) | uppercase}}</strong></span>
+            <span><strong>{{getName(3) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(3) | uppercase}}</strong></span>
+          </div>
         </div>
       </div>
-      <div class="container-scale">
-        <div class="field th4" [ngClass]="getStatus(5) ? 'active' : ''" (click)="tabSelected(5)">
-          <img src="./assets/svg/construction.svg"/>
-          <span><strong>{{getName(5) | uppercase}}</strong></span>
+      <div class="row">
+        <div class="container-scale">
+          <div class="field th6" [ngClass]="getStatus(4) ? 'active' : ''" (click)="tabSelected(4)">
+            <span><strong>{{getType(4) | uppercase}}</strong></span>
+            <span><strong>{{getName(4) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(4) | uppercase}}</strong></span>
+          </div>
+        </div>
+        <div class="container-scale">
+          <div class="field th4" [ngClass]="getStatus(5) ? 'active' : ''" (click)="tabSelected(5)">
+            <img src="./assets/svg/construction.svg"/>
+            <span><strong>{{getName(5) | uppercase}}</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="small">
+    <div class="fields">
+      <div class="row">
+        <div class="container-scale">
+          <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="tabSelected(0)">
+            <span><strong>{{getType(0) | uppercase}}</strong></span>
+            <span><strong>{{getName(0) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(0) | uppercase}}</strong></span>
+          </div>
+        </div>
+        <div class="container-scale">
+          <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="tabSelected(1)">
+            <span><strong>{{getType(1) | uppercase}}</strong></span>
+            <span><strong>{{getName(1) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(1) | uppercase}}</strong></span>
+          </div>
+        </div>
+        <div class="container-scale">
+          <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="tabSelected(2)">
+            <span><strong>{{getType(2) | uppercase}}</strong></span>
+            <span><strong>{{getName(2) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(2) | uppercase}}</strong></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container-scale">
+          <div class="field th5" [ngClass]="getStatus(3) ? 'active' : ''" (click)="tabSelected(3)">
+            <span><strong>{{getType(3) | uppercase}}</strong></span>
+            <span><strong>{{getName(3) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(3) | uppercase}}</strong></span>
+          </div>
+        </div>
+        <div class="container-scale">
+          <div class="field th6" [ngClass]="getStatus(4) ? 'active' : ''" (click)="tabSelected(4)">
+            <span><strong>{{getType(4) | uppercase}}</strong></span>
+            <span><strong>{{getName(4) | uppercase}}</strong></span>
+            <span class="location"><strong>{{getLocation(4) | uppercase}}</strong></span>
+          </div>
+        </div>
+        <div class="container-scale">
+          <div class="field th4" [ngClass]="getStatus(5) ? 'active' : ''" (click)="tabSelected(5)">
+            <img src="./assets/svg/construction.svg"/>
+            <span><strong>{{getName(5) | uppercase}}</strong></span>
+          </div>
         </div>
       </div>
     </div>
@@ -53,14 +155,15 @@
   <div *ngIf="isNumberIndexSelected()" class="box-index-selected">
     <div class="subField-elements" *ngIf="(getSubFields() && getSubFields()!!.length > 1) || this.indexSelected === 5">
       <span class="subfield-text"><strong>Seleziona una categoria</strong></span>
-        <div class="subfields-buttons">
-            <div *ngFor="let subField of getSubFields()" class="subField" (click)="setSubFieldSelected(subField)"
-                 [ngClass]="getStatusSubfield(subField.name) ? 'active' : ''">
-              <span class="subfield-button-text">{{subField.name | uppercase}}</span>
-            </div>
-          </div>
+      <div class="subfields-buttons">
+        <div *ngFor="let subField of getSubFields()" class="subField" (click)="setSubFieldSelected(subField)"
+             [ngClass]="getStatusSubfield(subField.name) ? 'active' : ''">
+          <span class="subfield-button-text">{{subField.name | uppercase}}</span>
+        </div>
+      </div>
     </div>
-      <app-img-container [imagesList]="this.imagesList" *ngIf="this.enabled && this.imagesList.length > 0" [mobile]="this.mobile">
-      </app-img-container>
+    <app-img-container [imagesList]="this.imagesList" *ngIf="this.enabled && this.imagesList.length > 0"
+                       [mobile]="this.mobile">
+    </app-img-container>
   </div>
 </div>

@@ -1,21 +1,19 @@
-<div class="container-carousel">
+<div class="box-carousel-mobile">
   <swiper
-    [grabCursor]="true"
-    [centeredSlides]="true"
-    [slidesPerView]="'auto'"
-    [spaceBetween]="40"
+    [slidesPerView]="1"
+    [spaceBetween]="10"
+    [initialSlide]="0"
+    [loop]="true"
     [autoplay]="{
       delay: 3000,
       disableOnInteraction: false
     }"
-    [loop]="true"
-
     class="mySwiper"
   >
-    <ng-template swiperSlide class="vertical-img"
+    <ng-template swiperSlide
     ><img src="./assets/img/principal-home/1.jpg"/></ng-template
     >
-    <ng-template swiperSlide class="vertical-img"
+    <ng-template swiperSlide
     ><img src="./assets/img/principal-home/2.jpg"/></ng-template
     >
     <ng-template swiperSlide
@@ -27,15 +25,16 @@
     <ng-template swiperSlide
     ><img src="./assets/img/principal-home/7.jpg"/></ng-template
     >
-    <ng-template swiperSlide class="vertical-img-m"
+    <ng-template swiperSlide
     ><img src="./assets/img/principal-home/3.jpeg"/></ng-template
     >
-    <ng-template swiperSlide class="vertical-img-m"
+    <ng-template swiperSlide
     ><img src="./assets/img/principal-home/4.JPG"/></ng-template
     >
-    <ng-template swiperSlide class="vertical-img-m"
+    <ng-template swiperSlide
     ><img src="./assets/img/principal-home/8.jpg"/></ng-template
     >
   </swiper>
 </div>
+
 

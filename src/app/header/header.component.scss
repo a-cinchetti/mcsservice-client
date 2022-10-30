@@ -39,3 +39,9 @@ span {
     padding: 0 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .header-component {
+    padding: 0;
+  }
+}

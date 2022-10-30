@@ -41,7 +41,10 @@ app-box-fields {
 }
 
 app-box-carousel {
-  //margin-bottom: 8rem;
+}
+
+app-box-carousel-mobile {
+  display: none;
 }
 
 .icon-homepage {
@@ -79,6 +82,17 @@ app-box-carousel {
 @media (max-width: 992px) {
   .header-page {
     margin: 0 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  app-box-carousel {
+    display: none;
+  }
+
+  app-box-carousel-mobile {
+    margin-top: 5rem;
+    display: block;
   }
 }
 

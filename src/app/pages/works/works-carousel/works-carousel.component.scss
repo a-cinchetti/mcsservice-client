@@ -4,6 +4,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+
   ::ng-deep .swiper-button-next {
     background-color: #e7e6e6;
     padding: 1rem;
@@ -56,7 +57,7 @@
   cursor: pointer;
   font-size: 18px;
   //box-shadow: 0 0 3px #999999;
-  border: 2px solid  #999999;
+  border: 2px solid #999999;
 
   &.active {
     background-color: #374785;
@@ -71,10 +72,12 @@
   justify-content: center;
   align-items: center;
   flex: 1;
+
   img {
     width: 15rem;
     margin-right: 5rem;
   }
+
   span {
     font-size: 20px;
     color: #24305E;
@@ -120,6 +123,7 @@
   height: 3.5rem;
   cursor: pointer;
   margin-bottom: 2rem;
+
   &.active {
     background-color: #374785;
     color: white;
@@ -148,6 +152,21 @@ app-img-container {
   flex-direction: column;
 }
 
+.large {
+  display: flex;
+  flex-direction: column;
+}
+
+.medium {
+  display: none;
+  flex-direction: column;
+}
+
+.small {
+  display: none;
+  flex-direction: column;
+}
+
 .field {
   display: flex;
   width: 100%;
@@ -162,6 +181,7 @@ app-img-container {
     font-size: 1.2rem;
     color: #242e5b;
     z-index: 2;
+
     &.location {
       font-size: 0.8rem;
     }
@@ -169,13 +189,16 @@ app-img-container {
 
   &.st {
     background-color: #ffffff;
+
     &.active {
       background-color: #82bce0;
     }
+
     background-image: url("./../../../../assets/img/progetti-home/hangar-manzoni.png");
     background-size: cover;
     background-position: bottom;
     flex-direction: column;
+
     span {
       text-align: center;
       line-height: 2rem;
@@ -184,14 +207,17 @@ app-img-container {
 
   &.nd {
     background-color: #ffffff;
+
     &.active {
       background-color: #fce070;
     }
+
     background-image: url("./../../../../assets/img/progetti-home/capannone-trezzano.png");
     background-size: cover;
     background-position: bottom;
     display: flex;
     flex-direction: column;
+
     span {
       text-align: center;
       line-height: 2rem;
@@ -200,17 +226,21 @@ app-img-container {
 
   &.th3 {
     background-color: #ffffff;
+
     &.active {
       background-color: #F76C6C;
+
       span {
         color: white;
       }
     }
+
     background-image: url("./../../../../assets/img/progetti-home/berling.png");
     background-size: cover;
     background-position: bottom;
     display: flex;
     flex-direction: column;
+
     span {
       color: #242e5b;
       text-align: center;
@@ -218,19 +248,23 @@ app-img-container {
     }
   }
 
-  &.th5,{
+  &.th5, {
     background-color: #ffffff;
+
     &.active {
       background-color: #F76C6C;
+
       span {
         color: white;
       }
     }
+
     background-image: url("./../../../../assets/img/progetti-home/berling-nuovo.png");
     background-size: cover;
     background-position: bottom;
     display: flex;
     flex-direction: column;
+
     span {
       color: #242e5b;
       text-align: center;
@@ -238,16 +272,19 @@ app-img-container {
     }
   }
 
-  &.th6,{
+  &.th6, {
     background-color: #ffffff;
+
     &.active {
       background-color: #82bce0;
     }
+
     background-image: url("./../../../../assets/img/progetti-home/pharma.png");
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
+
     span {
       text-align: center;
       line-height: 2rem;
@@ -256,22 +293,28 @@ app-img-container {
 
   &.th4 {
     background-color: #e8e8e8;
+
     &.active {
       background-color: #374785;
+
       span {
         color: white;
       }
+
       img {
         opacity: 100%;
       }
     }
+
     display: flex;
     flex-direction: column;
+
     img {
       width: 7rem;
       margin-bottom: 2rem;
       opacity: 50%;
     }
+
     span {
       color: #242e5b;
     }
@@ -324,5 +367,46 @@ app-img-container {
 
   .container-scale {
     width: 30%;
+  }
+
+  .subField {
+    width: 12rem;
+  }
+
+  .subField-elements {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .subfield-text {
+    width: 100%;
+    text-align: start;
+  }
+
+  .subfields-buttons {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: none;
+  }
+
+  .medium {
+    display: flex;
+  }
+
+  .container-scale {
+    width: 40%;
+    max-width: 40%;
+  }
+
+  .row {
+    justify-content: space-evenly;
   }
 }
