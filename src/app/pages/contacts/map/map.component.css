@@ -9,3 +9,9 @@
 google-map {
   width: 100%
 }
+
+@media (max-width: 992px) {
+  .map-container {
+    margin: 2rem 0 7rem;
+  }
+}

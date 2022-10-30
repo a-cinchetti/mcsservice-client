@@ -1,4 +1,4 @@
-import {ChangeDetectorRef, Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {ChangeDetectorRef, Component, HostListener, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-works-carousel',
@@ -16,6 +16,7 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
   private subFieldNameSelected: any;
   enabled: boolean = true;
   imagesList: string[] = [];
+  mobile: boolean = false;
 
   constructor(private changeDetector: ChangeDetectorRef){}
 
@@ -56,6 +57,20 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
       this.selected = true;
       this.setActiveField(this.indexSelected);
       this.setImagesListByDefault();
+    }
+    this.setMobile(screen.width);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.setMobile(event.target.innerWidth);
+  }
+
+  setMobile(sizeScreen: number){
+    const oldMobile = this.mobile;
+    this.mobile = sizeScreen <= 992;
+    if (oldMobile != this.mobile) {
+      this.reloadTree();
     }
   }
 

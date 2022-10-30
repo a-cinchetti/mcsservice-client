@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, HostListener, Input, OnInit, ViewEncapsulation} from '@angular/core';
 import SwiperCore from 'swiper';
 import Swiper, {Navigation, Pagination} from 'swiper';
 
@@ -12,6 +12,8 @@ SwiperCore.use([Pagination, Navigation]);
 })
 export class ImgContainerComponent implements OnInit {
   @Input()
+  mobile: boolean = false;
+  @Input()
   imagesList: string[] | undefined;
   swiper: Swiper | undefined;
   paginationConfig: boolean | undefined;
@@ -19,7 +21,6 @@ export class ImgContainerComponent implements OnInit {
 
   constructor() {
   }
-
 
   ngOnInit(): void {
     if (this.imagesList?.length == 1) {

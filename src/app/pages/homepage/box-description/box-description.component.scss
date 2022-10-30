@@ -90,6 +90,7 @@ button {
   margin-bottom: 3.5rem;
   position: relative;
   align-items: center;
+
   span {
     font-size: 1.3rem;
     white-space: normal;
@@ -116,11 +117,84 @@ button {
 .img-description {
   position: absolute;
   width: 85%;
-  top:0;
-  bottom:0;
-  margin-top:auto;
-  margin-bottom:auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
   left: -80%;
   border-radius: 10px;
 }
 
+
+@media (max-width: 1280px) {
+  .motto {
+    span {
+      font-size: 1.1rem;
+      padding: 1.3rem 2.1rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  .text-description {
+    padding: 2rem;
+    .society-summary {
+      span {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+
+  .description {
+    padding-left: 2rem;
+  }
+
+  button {
+    img {
+      width: 3rem;
+      margin-right: 1.2rem;
+    }
+
+    .button-contact {
+      margin: 0.8rem;
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 1.1rem;
+      }
+    }
+    width: 250px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .description {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .icon-svg {
+    display: none;
+  }
+  .motto {
+    background-color: transparent;
+    max-width: 100%;
+    justify-content: center;
+    span {
+      width: 70%;
+      font-size: 1.2rem;
+      color: #24305E;
+    }
+  }
+
+  .img-description {
+    display: none;
+  }
+
+  .description {
+    max-width: 100%;
+    padding-left: 0;
+  }
+}

@@ -205,3 +205,29 @@ button {
   margin-bottom: 3rem;
   padding: 0 3%;
 }
+
+@media (max-width: 1280px) {
+  .row {
+    padding: 0;
+  }
+
+  .container-scale {
+    height: 17rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container-scale {
+    height: 14rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .row {
+    justify-content: space-between;
+  }
+  .container-scale {
+    width: 30%;
+    max-width: 30%;
+  }
+}

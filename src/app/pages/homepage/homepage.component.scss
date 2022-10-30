@@ -66,3 +66,20 @@ app-box-carousel {
   align-items: center;
 
 }
+
+@media (max-width: 1280px) {
+  .icon-homepage {
+    ::ng-deep svg {
+      height: 10rem;
+      width: 33rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header-page {
+    margin: 0 0 2rem;
+  }
+}
+
+

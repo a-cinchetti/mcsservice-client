@@ -31,3 +31,15 @@ mat-toolbar {
 app-header {
   width: 100%;
 }
+
+@media (max-width: 1280px) {
+  .router-wrapper {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .router-wrapper {
+    padding: 0 4%;
+  }
+}

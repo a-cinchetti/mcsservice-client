@@ -1,0 +1,45 @@
+.title-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  color: #2a287c;
+  margin: 8rem;
+}
+
+.contacts {
+  display:flex;
+}
+
+app-contacts-list {
+  width: 50%;
+}
+
+app-map {
+  width: 50%;
+}
+
+@media (max-width: 1050px) {
+  app-contacts-list {
+    width: 55%;
+  }
+
+  app-map {
+    width: 45%;
+  }
+}
+
+@media (max-width: 992px) {
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  app-contacts-list {
+    width: 100%;
+  }
+
+  app-map {
+    width: 90%;
+  }
+}

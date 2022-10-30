@@ -302,3 +302,27 @@ app-img-container {
   margin-bottom: 3rem;
   padding: 0 3%;
 }
+
+@media (max-width: 1280px) {
+  .row {
+    padding: 0;
+  }
+
+  .subField {
+    width: 14rem;
+  }
+
+  app-img-container {
+    margin: 2rem 0 4rem 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .row {
+    justify-content: space-between;
+  }
+
+  .container-scale {
+    width: 30%;
+  }
+}

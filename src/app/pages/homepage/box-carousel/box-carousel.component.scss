@@ -53,3 +53,14 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .container-carousel {
+    padding: 5rem 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-carousel {
+    padding: 3rem 0;
+  }
+}

@@ -60,6 +60,7 @@
             </div>
           </div>
     </div>
-      <app-img-container [imagesList]="this.imagesList" *ngIf="this.enabled && this.imagesList.length > 0"></app-img-container>
+      <app-img-container [imagesList]="this.imagesList" *ngIf="this.enabled && this.imagesList.length > 0" [mobile]="this.mobile">
+      </app-img-container>
   </div>
 </div>
