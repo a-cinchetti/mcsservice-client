@@ -137,3 +137,26 @@
     flex: 0;
   }
 }
+
+@media (max-width: 576px) {
+  .site-elements {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .sections {
+    margin: 2rem 0;
+    align-items: center;
+  }
+
+  .certificate {
+    .image-wrapper {
+      background: white;
+
+      img {
+        max-width: 25rem;
+        width: 100%;
+      }
+    }
+  }
+}

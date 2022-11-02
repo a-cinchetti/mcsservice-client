@@ -96,4 +96,21 @@ app-box-carousel-mobile {
   }
 }
 
+@media (max-width: 576px) {
 
+  .icon-homepage {
+    margin: 4rem 0 0 0;
+    ::ng-deep svg {
+      width: 100%;
+    }
+  }
+
+  .header-page {
+    margin: 0;
+  }
+
+  app-box-carousel-mobile {
+    margin-top: 2rem;
+    display: block;
+  }
+}

@@ -272,3 +272,29 @@ button {
     justify-content: space-evenly;
   }
 }
+
+@media (max-width: 576px) {
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: flex;
+  }
+
+  .medium {
+    display: none;
+  }
+
+  .fields {
+    align-items: center;
+  }
+
+  .container-scale {
+    width: 100%;
+    max-width: 25rem;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

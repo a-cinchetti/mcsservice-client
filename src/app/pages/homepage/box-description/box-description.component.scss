@@ -198,3 +198,34 @@ button {
     padding-left: 0;
   }
 }
+
+@media (max-width: 992px) {
+  .text-description {
+    padding: 1rem;
+  }
+
+  .society-text{
+    line-height: 1.8rem;
+  }
+
+  .motto {
+    margin-bottom: 1.5rem;
+    span {
+      padding: 1.3rem 1.5rem;
+      width: 100%;
+    }
+  }
+  button {
+    .button-contact {
+      margin: 0.6rem;
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 1.1rem;
+      }
+    }
+
+    width: 240px;
+  }
+}

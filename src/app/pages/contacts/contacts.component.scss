@@ -43,3 +43,13 @@ app-map {
     width: 90%;
   }
 }
+
+@media (max-width: 576px) {
+  .title-contacts {
+    font-size: 3rem;
+    color: #2a287c;
+    margin: 8rem 0;
+    line-height: 3.5rem;
+    text-align: center;
+  }
+}

@@ -20,6 +20,14 @@
   }
 }
 
+.header-pages-menu {
+  display: none;
+}
+
+.header-pages {
+  display: block;
+}
+
 span:not(:last-child) {
   margin-right: 4rem;
 }
@@ -43,5 +51,46 @@ span {
 @media (max-width: 768px) {
   .header-component {
     padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-svg {
+    ::ng-deep svg {
+      width: 3rem;
+      height: 3rem;
+      margin: 0;
+    }
+  }
+
+  .header-pages-menu {
+    display: flex;
+    button {
+      color: #2a287c;
+    }
+  }
+
+  span {
+    margin: 1rem !important;
+    font-size: 1rem;
+  }
+
+  .header-pages {
+    display: none;
+  }
+
+  .material-icons {
+    font-weight: bold;
+  }
+
+  .icon-menu {
+    transform: scale(1.5);
+  }
+  .mat-focus-indicator.mat-menu-trigger.mat-button.mat-button-base {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 3px;
+    min-width: 30px;
   }
 }
