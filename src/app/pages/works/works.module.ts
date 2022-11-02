@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { WorksComponent } from './works.component';
-import { WorksCarouselComponent } from './works-carousel/works-carousel.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {WorksComponent} from './works.component';
+import {WorksCarouselComponent} from './works-carousel/works-carousel.component';
 import {BoxCarouselModule} from "../homepage/box-carousel/box-carousel.module";
-import { ImgContainerComponent } from './img-container/img-container.component';
+import {ImgContainerComponent} from './img-container/img-container.component';
 import {SwiperModule} from "swiper/angular";
-
-
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -17,7 +17,9 @@ import {SwiperModule} from "swiper/angular";
   imports: [
     CommonModule,
     BoxCarouselModule,
-    SwiperModule
+    SwiperModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   exports: [
     ImgContainerComponent

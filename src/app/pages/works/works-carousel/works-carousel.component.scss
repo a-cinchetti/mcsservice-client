@@ -409,4 +409,49 @@ app-img-container {
   .row {
     justify-content: space-evenly;
   }
+
+  .empty-index {
+    img {
+      margin-right: 2rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: flex;
+  }
+
+  .medium {
+    display: none;
+  }
+
+  .empty-index {
+    img {
+      width: 55%;
+      max-width: 14rem;
+    }
+    span {
+      text-align: center;
+    }
+  }
+
+  .box-carousel {
+    min-height: 30rem;
+  }
+
+  app-img-container {
+    margin: 0 0 4rem 0;
+  }
+
+  .subField-elements {
+    display: none;
+  }
+  mat-form-field {
+    width: 100%;
+  }
 }

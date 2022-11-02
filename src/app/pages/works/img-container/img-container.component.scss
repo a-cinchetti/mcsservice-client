@@ -79,3 +79,18 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .img-container-box {
+    .swiper-slide {
+      max-height: 40rem;
+    }
+    swiper-slide img {
+      max-height: 100%;
+    }
+  }
+  .img-container-box {
+    height: 42rem;
+    margin: 0;
+  }
+}

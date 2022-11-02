@@ -11,7 +11,12 @@ import {HttpClientModule} from "@angular/common/http";
 import {MatButtonModule} from "@angular/material/button";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatIconModule} from "@angular/material/icon";
+import {MAT_SELECT_SCROLL_STRATEGY} from "@angular/material/select";
+import {BlockScrollStrategy, Overlay} from "@angular/cdk/overlay";
 
+export function scrollFactory(overlay: Overlay): () => BlockScrollStrategy {
+  return () => overlay.scrollStrategies.block();
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +34,9 @@ import {MatIconModule} from "@angular/material/icon";
     MatMenuModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [
+    { provide: MAT_SELECT_SCROLL_STRATEGY, useFactory: scrollFactory, deps: [Overlay] }
+  ],
   bootstrap: [AppComponent],
   exports: [
     InlineSVGDirective

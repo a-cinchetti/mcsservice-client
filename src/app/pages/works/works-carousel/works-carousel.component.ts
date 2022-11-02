@@ -13,7 +13,7 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
   indexSelected: number | undefined;
   private selected: boolean = false;
   private subFieldSelected: boolean = false;
-  private subFieldNameSelected: any;
+  subFieldNameSelected: any;
   enabled: boolean = true;
   imagesList: string[] = [];
   mobile: boolean = false;
@@ -38,6 +38,13 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
         this.setSubFieldSelected(subFields[0])
       }
     }
+  }
+
+  getTextOption(field: any) {
+    if(field.type) {
+      return field.type + " - " + field.name
+    }
+    return field.name
   }
 
   setImagesListBySubFields(imagesList: string[]) {
@@ -144,5 +151,13 @@ export class WorksCarouselComponent implements OnInit, OnChanges {
     this.setImagesListByDefault();
     this.subFieldNameSelected = "all";
     this.reloadTree();
+  }
+
+  fieldChangeSelect(event: any) {
+    this.tabSelected(event.value);
+  }
+
+  subfieldChangeSelect(event: any) {
+    this.setSubFieldSelected(this.getSubFields()?.filter((el: { name: string; }) => el.name === event.value)[0]);
   }
 }
