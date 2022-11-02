@@ -126,11 +126,20 @@
   <div *ngIf="isNumberIndexSelected()" class="box-index-selected">
     <div class="subField-elements" *ngIf="(getSubFields() && getSubFields()!!.length > 1) || this.indexSelected === 5">
       <span class="subfield-text"><strong>Seleziona una categoria</strong></span>
-      <div class="subfields-buttons">
+      <div class="subfields-buttons" *ngIf="!mobile && false">
         <div *ngFor="let subField of getSubFields()" class="subField" (click)="setSubFieldSelected(subField)"
              [ngClass]="getStatusSubfield(subField.name) ? 'active' : ''">
           <span class="subfield-button-text">{{subField.name | uppercase}}</span>
         </div>
+      </div>
+      <div class="subfields-buttons" *ngIf="mobile || true">
+        <mat-form-field>
+          <mat-select (selectionChange)="subfieldChangeSelect($event)" [value]="this.subFieldNameSelected">
+            <mat-option *ngFor="let subField of getSubFields()" [value]="subField.name">
+              {{getTextOption(subField)}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
     </div>
     <app-img-container [imagesList]="this.imagesList" *ngIf="this.enabled && this.imagesList.length > 0"

@@ -9,15 +9,18 @@
 .contact {
   display: flex;
   flex-direction: column;
+
   .title {
     font-size: 1.4rem;
     line-height: 2em;
     color: #2a287c;
   }
+
   .content {
     font-size: 1.1rem;
     line-height: 1.5em;
   }
+
   width: 50%;
   margin-bottom: 2rem;
 }
@@ -27,6 +30,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+
   &:last-child {
     margin-bottom: 8rem;
   }
@@ -41,5 +45,13 @@
     &:last-child {
       margin-bottom: 2rem;
     }
+  }
+}
+
+@media (max-width: 576px) {
+  .same-context {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }

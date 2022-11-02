@@ -94,7 +94,7 @@
 .subField-elements {
   display: flex;
   flex-direction: row;
-  padding: 3rem 0 0 0;
+  padding: 3rem 7rem 0;
   //margin-top: 2rem;
   align-items: center;
 }
@@ -102,9 +102,9 @@
 .subfield-text {
   font-size: 1.2rem;
   color: #242e5b;
-  padding-bottom: 2rem;
-  width: 30%;
-  text-align: center;
+  width: 60%;
+  text-align: start;
+  padding-bottom: 0;
 }
 
 .subfield-button-text {
@@ -133,7 +133,12 @@
 .subfields-buttons {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  mat-form-field {
+    width: 100%;
+  }
 }
 
 .subField-separator {
@@ -358,6 +363,10 @@ app-img-container {
   app-img-container {
     margin: 2rem 0 4rem 0;
   }
+
+  .subField-elements {
+    padding: 3rem 3rem 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -374,17 +383,23 @@ app-img-container {
   }
 
   .subField-elements {
-    flex-direction: column;
-    padding: 0 2rem;
+    flex-direction: row;
+    padding: 0 0;
   }
 
   .subfield-text {
-    width: 100%;
+    width: 60%;
     text-align: start;
+    padding-bottom: 0;
   }
 
   .subfields-buttons {
     width: 100%;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    mat-form-field {
+      width: 100%;
+    }
   }
 }
 

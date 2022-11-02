@@ -53,10 +53,13 @@
   margin: 0 5rem;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1620px) {
   .img-container-box {
     margin: 0;
   }
+}
+
+@media (max-width: 1350px) {
   .img-container-box {
     .swiper-slide img {
       max-width: 80%;

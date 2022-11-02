@@ -31,7 +31,7 @@
   },
   {
     "type": "Nuova costruzione",
-    "name": "capannone Bruniglass",
+    "name": "Capannone Bruniglass",
     "location": "Trezzano sul Naviglio",
     "active": false,
     "index": 1,
@@ -168,7 +168,7 @@
     "index": 5,
     "subFields": [
       {
-        "name": "cappotti e verniciature",
+        "name": "Cappotti e verniciature",
         "images": [
           "./assets/img/works/altro/cappotti/cappotti_1.jpg",
           "./assets/img/works/altro/cappotti/cappotti_2.jpg",
@@ -194,7 +194,7 @@
         ]
       },
       {
-        "name": "nuove coperture",
+        "name": "Nuove coperture",
         "images": [
           "./assets/img/works/altro/coperture/coperture_1.jpeg",
           "./assets/img/works/altro/coperture/coperture_2.jpeg",
@@ -207,7 +207,7 @@
         ]
       },
       {
-        "name": "resine e segnaletica orizzontale",
+        "name": "Resine e segnaletica orizzontale",
         "images": [
           "./assets/img/works/altro/resine/resine_1.JPG",
           "./assets/img/works/altro/resine/resine_2.jpg",
@@ -229,7 +229,7 @@
         ]
       },
       {
-        "name": "riqualificazione condomini",
+        "name": "Riqualificazione condomini",
         "images": [
           "./assets/img/works/altro/condomini/condomini_1.jpg",
           "./assets/img/works/altro/condomini/condomini_2.jpg",
