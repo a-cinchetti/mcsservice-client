@@ -11,9 +11,9 @@
     <button mat-button [matMenuTriggerFor]="Menu" class="menu-button">
       <mat-icon aria-hidden="false" aria-label="menu-icon" fontIcon="menu" class="icon-menu"></mat-icon>
     </button>
-    <mat-menu #Menu="matMenu" xPosition="before">
-      <button mat-menu-item><span (click)="goToWorksPage()" class="text-menu"><strong>{{'I nostri lavori'}}</strong></span></button>
-      <button mat-menu-item><span (click)="goToContactsPage()" class="text-menu"><strong>{{'Contatti'}}</strong></span></button>
+    <mat-menu #Menu="matMenu">
+      <span (click)="goToWorksPage()" class="text-menu"><strong>{{'I nostri lavori'}}</strong></span>
+      <span (click)="goToContactsPage()" class="text-menu"><strong>{{'Contatti'}}</strong></span>
     </mat-menu>
   </div>
 </div>

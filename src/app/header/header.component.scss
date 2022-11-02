@@ -71,7 +71,7 @@ span {
   }
 
   span {
-    margin: 1rem !important;
+    margin: 0.7rem 2rem !important;
     font-size: 1rem;
   }
 
@@ -95,5 +95,15 @@ span {
   }
    ::ng-deep .text-menu {
     font-family: "DinPro", sans-serif !important;
+  }
+
+  ::ng-deep .mat-menu-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  mat-menu {
+    display: flex;
+    flex-direction: column;
   }
 }
