@@ -211,7 +211,6 @@
         "images": [
           "./assets/img/works/altro/resine/resine_1.JPG",
           "./assets/img/works/altro/resine/resine_2.jpg",
-          "./assets/img/works/altro/resine/resine_3.jpg",
           "./assets/img/works/altro/resine/resine_4.jpg",
           "./assets/img/works/altro/resine/resine_5.jpg",
           "./assets/img/works/altro/resine/resine_6.jpeg",
@@ -231,7 +230,6 @@
       {
         "name": "Riqualificazione condomini",
         "images": [
-          "./assets/img/works/altro/condomini/condomini_1.jpg",
           "./assets/img/works/altro/condomini/condomini_2.jpg",
           "./assets/img/works/altro/condomini/condomini_3.jpg",
           "./assets/img/works/altro/condomini/condomini_4.jpg"
