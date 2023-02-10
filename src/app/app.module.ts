@@ -8,10 +8,10 @@ import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {InlineSVGDirective, InlineSVGModule} from 'ng-inline-svg-2';
 import {HttpClientModule} from "@angular/common/http";
-import {MatButtonModule} from "@angular/material/button";
-import {MatMenuModule} from "@angular/material/menu";
+import {MatLegacyButtonModule as MatButtonModule} from "@angular/material/legacy-button";
+import {MatLegacyMenuModule as MatMenuModule} from "@angular/material/legacy-menu";
 import {MatIconModule} from "@angular/material/icon";
-import {MAT_SELECT_SCROLL_STRATEGY} from "@angular/material/select";
+import {MAT_LEGACY_SELECT_SCROLL_STRATEGY as MAT_SELECT_SCROLL_STRATEGY} from "@angular/material/legacy-select";
 import {BlockScrollStrategy, Overlay} from "@angular/cdk/overlay";
 
 export function scrollFactory(overlay: Overlay): () => BlockScrollStrategy {
