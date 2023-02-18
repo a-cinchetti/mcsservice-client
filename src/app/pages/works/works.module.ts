@@ -5,8 +5,8 @@ import {WorksCarouselComponent} from './works-carousel/works-carousel.component'
 import {BoxCarouselModule} from "../homepage/box-carousel/box-carousel.module";
 import {ImgContainerComponent} from './img-container/img-container.component';
 import {SwiperModule} from "swiper/angular";
-import {MatLegacyFormFieldModule as MatFormFieldModule} from "@angular/material/legacy-form-field";
-import {MatLegacySelectModule as MatSelectModule} from "@angular/material/legacy-select";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import {MatLegacySelectModule as MatSelectModule} from "@angular/material/legacy
     BoxCarouselModule,
     SwiperModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
   ],
   exports: [
     ImgContainerComponent

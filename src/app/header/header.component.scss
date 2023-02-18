@@ -100,10 +100,15 @@ span {
   ::ng-deep .mat-menu-content {
     display: flex;
     flex-direction: column;
+    background: white;
   }
 
   mat-menu {
     display: flex;
     flex-direction: column;
   }
+}
+
+.menu-button {
+  background: white;
 }

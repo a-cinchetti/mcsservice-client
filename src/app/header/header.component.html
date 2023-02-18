@@ -1,15 +1,12 @@
 <div class="header-component">
   <div class="icon-svg" (click)="goToHomepage()" aria-label="My icon" [inlineSVG]="'/assets/svg/logo/icon.svg'"></div>
-<!--  <div class="left-icon-container">-->
-<!--    <div [inlineSVG]="'/assets/svg/logo/icon.svg'" class="icon-svg"></div>-->
-<!--  </div>-->
   <div class="header-pages">
     <span (click)="goToWorksPage()"><strong>{{'I nostri lavori'}}</strong></span>
     <span (click)="goToContactsPage()"><strong>{{'Contatti'}}</strong></span>
   </div>
   <div class="header-pages-menu">
     <button mat-button [matMenuTriggerFor]="Menu" class="menu-button">
-      <mat-icon aria-hidden="false" aria-label="menu-icon" fontIcon="menu" class="icon-menu"></mat-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
     </button>
     <mat-menu #Menu="matMenu">
       <span (click)="goToWorksPage()" class="text-menu"><strong>{{'I nostri lavori'}}</strong></span>

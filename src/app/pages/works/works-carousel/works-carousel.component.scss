@@ -470,3 +470,7 @@ app-img-container {
     width: 100%;
   }
 }
+
+::ng-deep .mdc-text-field--filled {
+    background-color: white !important;
+}
