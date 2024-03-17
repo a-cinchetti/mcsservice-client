@@ -163,9 +163,39 @@
     ]
   },
   {
-    "name": "Altri progetti",
+    "type": "Riqualificazione Energetica",
+    "name": "Edifici",
+    "location": "Milano",
     "active": false,
     "index": 5,
+    "subFields": [
+      {
+        "name": "all",
+        "images": [
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_1.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_2.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_3.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_4.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_5.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_6.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_7.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_8.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_9.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_10.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_11.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_12.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_13.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_14.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_15.jpg",
+          "./assets/img/works/riqualificazioneEnergetica/riqualificazione_16.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Altri progetti",
+    "active": false,
+    "index": 6,
     "subFields": [
       {
         "name": "Cappotti e verniciature",
@@ -225,14 +255,6 @@
           "./assets/img/works/altro/resine/resine_15.jpg",
           "./assets/img/works/altro/resine/resine_16.jpeg",
           "./assets/img/works/altro/resine/resine_17.jpg"
-        ]
-      },
-      {
-        "name": "Riqualificazione condomini",
-        "images": [
-          "./assets/img/works/altro/condomini/condomini_2.jpg",
-          "./assets/img/works/altro/condomini/condomini_3.jpg",
-          "./assets/img/works/altro/condomini/condomini_4.jpg"
         ]
       }
     ]

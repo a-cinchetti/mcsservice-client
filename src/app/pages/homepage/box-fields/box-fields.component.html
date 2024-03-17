@@ -1,100 +1,118 @@
 <div class="home-card">
   <div class="large">
     <div class="fields">
-      <div class="row">
-        <div class="container-scale">
-          <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
-            <span><strong>{{getType(0) | uppercase}}</strong></span>
-            <span><strong>{{getName(0) | uppercase}}</strong></span>
-            <span class="location"><strong>{{getLocation(0) | uppercase}}</strong></span>
+      <div class="col">
+        <div class="row">
+          <div class="container-scale">
+            <div class="field th7" [ngClass]="getStatus(5) ? 'active' : ''" (click)="setActiveField(5)">
+              <span><strong>{{getType(5) | uppercase}}</strong></span>
+              <span><strong>{{getName(5) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(5) | uppercase}}</strong></span>
+            </div>
+          </div>
+          <div class="container-scale">
+            <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="setActiveField(1)">
+              <span><strong>{{getType(1) | uppercase}}</strong></span>
+              <span><strong>{{getName(1) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(1) | uppercase}}</strong></span>
+            </div>
+          </div>
+          <div class="container-scale">
+            <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="setActiveField(2)">
+              <span><strong>{{getType(2) | uppercase}}</strong></span>
+              <span><strong>{{getName(2) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(2) | uppercase}}</strong></span>
+            </div>
           </div>
         </div>
-        <div class="container-scale">
-          <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="setActiveField(1)">
-            <span><strong>{{getType(1) | uppercase}}</strong></span>
-            <span><strong>{{getName(1) | uppercase}}</strong></span>
-            <span class="location"><strong>{{getLocation(1) | uppercase}}</strong></span>
+        <div class="row">
+          <div class="container-scale">
+            <div class="field th5" [ngClass]="getStatus(3) ? 'active' : ''" (click)="setActiveField(3)">
+              <span><strong>{{getType(3) | uppercase}}</strong></span>
+              <span><strong>{{getName(3) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(3) | uppercase}}</strong></span>
+            </div>
           </div>
-        </div>
-        <div class="container-scale">
-          <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="setActiveField(2)">
-            <span><strong>{{getType(2) | uppercase}}</strong></span>
-            <span><strong>{{getName(2) | uppercase}}</strong></span>
-            <span class="location"><strong>{{getLocation(2) | uppercase}}</strong></span>
+          <div class="container-scale">
+            <div class="field th6" [ngClass]="getStatus(4) ? 'active' : ''" (click)="setActiveField(4)">
+              <span><strong>{{getType(4) | uppercase}}</strong></span>
+              <span><strong>{{getName(4) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(4) | uppercase}}</strong></span>
+            </div>
+          </div>
+          <div class="container-scale">
+            <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
+              <span><strong>{{getType(0) | uppercase}}</strong></span>
+              <span><strong>{{getName(0) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(0) | uppercase}}</strong></span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="container-scale">
-          <div class="field th5" [ngClass]="getStatus(3) ? 'active' : ''" (click)="setActiveField(3)">
-            <span><strong>{{getType(3) | uppercase}}</strong></span>
-            <span><strong>{{getName(3) | uppercase}}</strong></span>
-            <span class="location"><strong>{{getLocation(3) | uppercase}}</strong></span>
-          </div>
-        </div>
-        <div class="container-scale">
-          <div class="field th6" [ngClass]="getStatus(4) ? 'active' : ''" (click)="setActiveField(4)">
-            <span><strong>{{getType(4) | uppercase}}</strong></span>
-            <span><strong>{{getName(4) | uppercase}}</strong></span>
-            <span class="location"><strong>{{getLocation(4) | uppercase}}</strong></span>
-          </div>
-        </div>
-        <div class="container-scale">
-          <div class="field th4" [ngClass]="getStatus(5) ? 'active' : ''" (click)="setActiveField(5)">
-            <img src="./assets/svg/construction.svg"/>
-            <span><strong>{{getName(5) | uppercase}}</strong></span>
-          </div>
+      <div class="container-scale other-projects">
+        <div class="field th4" [ngClass]="getStatus(6) ? 'active' : ''" (click)="setActiveField(6)">
+          <img src="./assets/svg/construction.svg"/>
+          <span><strong>{{getName(6) | uppercase}}</strong></span>
         </div>
       </div>
     </div>
   </div>
   <div class="medium">
     <div class="fields">
-      <div class="row">
-        <div class="container-scale">
-          <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
-            <span><strong>{{getType(0) | uppercase}}</strong></span>
-            <span><strong>{{getName(0) | uppercase}}</strong></span>
-            <span class="location"><strong>{{getLocation(0) | uppercase}}</strong></span>
+      <div class="col">
+        <div class="row">
+          <div class="container-scale">
+            <div class="field th7" [ngClass]="getStatus(5) ? 'active' : ''" (click)="setActiveField(5)">
+              <span><strong>{{getType(5) | uppercase}}</strong></span>
+              <span><strong>{{getName(5) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(5) | uppercase}}</strong></span>
+            </div>
+          </div>
+          <div class="container-scale">
+            <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="setActiveField(1)">
+              <span><strong>{{getType(1) | uppercase}}</strong></span>
+              <span><strong>{{getName(1) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(1) | uppercase}}</strong></span>
+            </div>
           </div>
         </div>
-        <div class="container-scale">
-          <div class="field nd" [ngClass]="getStatus(1) ? 'active' : ''" (click)="setActiveField(1)">
-            <span><strong>{{getType(1) | uppercase}}</strong></span>
-            <span><strong>{{getName(1) | uppercase}}</strong></span>
-            <span class="location"><strong>{{getLocation(1) | uppercase}}</strong></span>
+        <div class="row">
+          <div class="container-scale">
+            <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="setActiveField(2)">
+              <span><strong>{{getType(2) | uppercase}}</strong></span>
+              <span><strong>{{getName(2) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(2) | uppercase}}</strong></span>
+            </div>
+          </div>
+          <div class="container-scale">
+            <div class="field th5" [ngClass]="getStatus(3) ? 'active' : ''" (click)="setActiveField(3)">
+              <span><strong>{{getType(3) | uppercase}}</strong></span>
+              <span><strong>{{getName(3) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(3) | uppercase}}</strong></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container-scale">
+            <div class="field th6" [ngClass]="getStatus(4) ? 'active' : ''" (click)="setActiveField(4)">
+              <span><strong>{{getType(4) | uppercase}}</strong></span>
+              <span><strong>{{getName(4) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(4) | uppercase}}</strong></span>
+            </div>
+          </div>
+          <div class="container-scale">
+            <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
+              <span><strong>{{getType(0) | uppercase}}</strong></span>
+              <span><strong>{{getName(0) | uppercase}}</strong></span>
+              <span class="location"><strong>{{getLocation(0) | uppercase}}</strong></span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="container-scale">
-          <div class="field th3" [ngClass]="getStatus(2) ? 'active' : ''" (click)="setActiveField(2)">
-            <span><strong>{{getType(2) | uppercase}}</strong></span>
-            <span><strong>{{getName(2) | uppercase}}</strong></span>
-            <span class="location"><strong>{{getLocation(2) | uppercase}}</strong></span>
-          </div>
-        </div>
-        <div class="container-scale">
-          <div class="field th5" [ngClass]="getStatus(3) ? 'active' : ''" (click)="setActiveField(3)">
-            <span><strong>{{getType(3) | uppercase}}</strong></span>
-            <span><strong>{{getName(3) | uppercase}}</strong></span>
-            <span class="location"><strong>{{getLocation(3) | uppercase}}</strong></span>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="container-scale">
-          <div class="field th6" [ngClass]="getStatus(4) ? 'active' : ''" (click)="setActiveField(4)">
-            <span><strong>{{getType(4) | uppercase}}</strong></span>
-            <span><strong>{{getName(4) | uppercase}}</strong></span>
-            <span class="location"><strong>{{getLocation(4) | uppercase}}</strong></span>
-          </div>
-        </div>
-        <div class="container-scale">
-          <div class="field th4" [ngClass]="getStatus(5) ? 'active' : ''" (click)="setActiveField(5)">
-            <img src="./assets/svg/construction.svg"/>
-            <span><strong>{{getName(5) | uppercase}}</strong></span>
-          </div>
+      <div class="container-scale other-projects">
+        <div class="field th4" [ngClass]="getStatus(6) ? 'active' : ''" (click)="setActiveField(6)">
+          <img src="./assets/svg/construction.svg"/>
+          <span><strong>{{getName(6) | uppercase}}</strong></span>
         </div>
       </div>
     </div>
@@ -102,10 +120,10 @@
   <div class="small">
     <div class="fields">
       <div class="container-scale">
-        <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
-          <span><strong>{{getType(0) | uppercase}}</strong></span>
-          <span><strong>{{getName(0) | uppercase}}</strong></span>
-          <span class="location"><strong>{{getLocation(0) | uppercase}}</strong></span>
+        <div class="field th7" [ngClass]="getStatus(5) ? 'active' : ''" (click)="setActiveField(5)">
+          <span><strong>{{getType(5) | uppercase}}</strong></span>
+          <span><strong>{{getName(5) | uppercase}}</strong></span>
+          <span class="location"><strong>{{getLocation(5) | uppercase}}</strong></span>
         </div>
       </div>
       <div class="container-scale">
@@ -137,9 +155,16 @@
         </div>
       </div>
       <div class="container-scale">
-        <div class="field th4" [ngClass]="getStatus(5) ? 'active' : ''" (click)="setActiveField(5)">
+        <div class="field st" [ngClass]="getStatus(0) ? 'active' : ''" (click)="setActiveField(0)">
+          <span><strong>{{getType(0) | uppercase}}</strong></span>
+          <span><strong>{{getName(0) | uppercase}}</strong></span>
+          <span class="location"><strong>{{getLocation(0) | uppercase}}</strong></span>
+        </div>
+      </div>
+      <div class="container-scale">
+        <div class="field th4" [ngClass]="getStatus(6) ? 'active' : ''" (click)="setActiveField(6)">
           <img src="./assets/svg/construction.svg"/>
-          <span><strong>{{getName(5) | uppercase}}</strong></span>
+          <span><strong>{{getName(6) | uppercase}}</strong></span>
         </div>
       </div>
     </div>

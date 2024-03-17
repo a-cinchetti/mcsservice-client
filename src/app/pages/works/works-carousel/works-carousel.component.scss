@@ -154,7 +154,13 @@ app-img-container {
 
 .fields {
   display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
 .large {
@@ -196,7 +202,7 @@ app-img-container {
     background-color: #ffffff;
 
     &.active {
-      background-color: #82bce0;
+      background-color: #fce070;
     }
 
     background-image: url("./../../../../assets/img/progetti-home/hangar-manzoni.png");
@@ -277,6 +283,30 @@ app-img-container {
     }
   }
 
+  &.th7, {
+    background-color: #ffffff;
+
+    &.active {
+      background-color: #82bce0;
+
+      span {
+        color: white;
+      }
+    }
+
+    background-image: url("./../../../../assets/img/progetti-home/riqualificazione-energetica.png");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      color: #242e5b;
+      text-align: center;
+      line-height: 2rem;
+    }
+  }
+
   &.th6, {
     background-color: #ffffff;
 
@@ -322,6 +352,7 @@ app-img-container {
 
     span {
       color: #242e5b;
+      text-align: center;
     }
   }
 }
@@ -342,11 +373,17 @@ app-img-container {
   height: 11rem;
   overflow: hidden;
   border-radius: 10px;
+  &.other-projects {
+    width: 18%;
+    height: unset;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+  }
 }
 
 .row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: 3rem;
   padding: 0 3%;
 }
@@ -378,12 +415,43 @@ app-img-container {
     width: 30%;
   }
 
+  .fields {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .container-scale {
+    width: 30%;
+    &.other-projects {
+      width: 100%;
+      height: unset;
+      margin-left: unset;
+      margin-bottom: unset;
+      max-width: 100%;
+    }
+  }
+  .field.th4 {
+    img {
+      margin-bottom: unset;
+      margin-top: 1rem;
+    }
+    span {
+      margin-bottom: 1rem;
+    }
+
+  }
+
   .subField {
     width: 12rem;
   }
 
   .subField-elements {
     flex-direction: row;
+    margin-top: 5rem;
     padding: 0 0;
   }
 
@@ -417,12 +485,12 @@ app-img-container {
   }
 
   .container-scale {
-    width: 40%;
-    max-width: 40%;
+    width: 47%;
+    max-width: 47%;
   }
 
   .row {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .empty-index {

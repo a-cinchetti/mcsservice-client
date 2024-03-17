@@ -6,7 +6,7 @@
   </div>
   <div class="description-container">
     <div class="description">
-      <img class="img-description" src="/assets/img/works/altro/cappotti/cappotti_15.jpg"/>
+      <img class="img-description" src="/assets/img/description/company.jpg"/>
       <div class="text-description">
         <div class="header-description">
           <img src="./assets/svg/home.svg"/>
@@ -32,12 +32,26 @@ utilizzati, rispettando tutti i regolamenti e le certificazioni vigenti in mater
         </span>
 
         </div>
-        <button mat-raised-button color="primary" (click)="goToContactsPage()" class="button-info">
-          <div class="button-contact">
-            <img src="./assets/svg/contact.svg" alt="contact"/>
-            <span>{{'Contattaci' | uppercase}}</span>
+        <div class="certificate">
+          <span class="certificate-text">
+            <strong>
+              {{'Certificati' | uppercase }}
+            </strong>
+          </span>
+          <div class="certificate-list">
+            <img class="certicate-img-cqop" src="./assets/img/logo-cqop.png"/>
+            <img class="certicate-img-iso" src="./assets/img/iso-9001.png"/>
           </div>
-        </button>
+        </div>
+
+        <div class="contact-button">
+          <button mat-raised-button color="primary" (click)="goToContactsPage()" class="button-info">
+            <div class="button-contact">
+              <img src="./assets/svg/contact.svg" alt="contact"/>
+              <span>{{'Contattaci' | uppercase}}</span>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>

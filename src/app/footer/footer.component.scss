@@ -36,12 +36,21 @@
   flex-direction: row;
   flex: 1;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
   .image-wrapper {
     background: white;
 
-    img {
+
+  }
+
+  img {
+    &.cqop {
       max-width: 20rem;
+    }
+    &.iso {
+      max-width: 8rem;
     }
   }
 
@@ -67,7 +76,7 @@
     margin-bottom: 2rem;
   }
 
-  margin-right: 6rem;
+  margin-right: 4rem;
 }
 
 .fiscals {
@@ -96,9 +105,52 @@
   flex-direction: row;
 }
 
+@media (max-width: 1500px) {
+  .certificate {
+    img {
+      &.cqop {
+        max-width: 17rem;
+      }
+
+      &.iso {
+        max-width: 6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .footer-box {
+    padding: 0 10%;
+  }
+  .certificate {
+    img {
+      &.cqop {
+        max-width: 15rem;
+      }
+
+      &.iso {
+        max-width: 6rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 1280px) {
   .footer-box {
     padding: 0 8%;
+  }
+
+  .certificate {
+    img {
+      &.cqop {
+        max-width: 15rem;
+      }
+
+      &.iso {
+        max-width: 5rem;
+      }
+    }
   }
 }
 
@@ -108,7 +160,8 @@
   }
 
   .info {
-    margin-right: 4rem;
+    margin-right: 2rem;
+    width: 50%;
   }
 }
 
@@ -138,6 +191,25 @@
   }
 }
 
+@media (max-width: 768px) {
+  .site-elements {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .certificate {
+    img {
+      &.cqop {
+        max-width: 17rem;
+      }
+
+      &.iso {
+        max-width: 6rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 576px) {
   .site-elements {
     flex-direction: column;
@@ -149,14 +221,9 @@
     align-items: center;
   }
 
-  .certificate {
-    .image-wrapper {
-      background: white;
-
-      img {
-        max-width: 25rem;
-        width: 100%;
-      }
-    }
+  .info {
+    margin-right: 2rem;
+    width: 60%;
   }
+
 }

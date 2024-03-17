@@ -32,7 +32,7 @@ export class MapComponent implements OnInit {
   }
 
   externalMap() {
-    const url = `www.google.com/maps/place/Via+Nazionale,+2,+24060+Borgo+di+terzo+BG`
+    const url = `www.google.com/maps/place/Via+Nazionale,+2a,+24060+Borgo+di+Terzo+BG`
     window.open('https://' + url, "_blank");
   }
 }

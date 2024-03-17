@@ -81,9 +81,42 @@ button {
   color: #24305E;
 }
 
+.certificate {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.certificate-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.certificate-text {
+  font-size: 1.2rem;
+  color: #24305E;
+}
+
+.certicate-img-iso {
+  width: 7rem;
+}
+
+.certicate-img-cqop {
+  height: 3rem;
+}
+
+
 .descriptions {
   display: flex;
   flex-direction: column;
+}
+
+.contact-button {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .motto {
@@ -232,4 +265,15 @@ button {
 
     width: 240px;
   }
+}
+
+@media (max-width: 500px) {
+  .certicate-img-iso {
+    width: 5rem;
+  }
+
+  .certicate-img-cqop {
+    height: 2rem;
+  }
+
 }
