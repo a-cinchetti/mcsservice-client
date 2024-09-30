@@ -8,6 +8,7 @@ import {BoxDescriptionComponent} from './box-description/box-description.compone
 import {BoxCarouselModule} from "./box-carousel/box-carousel.module";
 import {BoxCarouselMobileModule} from "./box-carousel-mobile/box-carousel-mobile.module";
 import {MatButtonModule} from "@angular/material/button";
+import {TranslateModule} from "@ngx-translate/core";
 
 
 @NgModule({
@@ -15,15 +16,16 @@ import {MatButtonModule} from "@angular/material/button";
   exports: [
     HomepageComponent,
   ],
-  imports: [
-    CommonModule,
-    BoxFieldsModule,
-    BoxCarouselModule,
-    BoxPartnersModule,
-    InlineSVGModule,
-    MatButtonModule,
-    BoxCarouselMobileModule
-  ]
+    imports: [
+        CommonModule,
+        BoxFieldsModule,
+        BoxCarouselModule,
+        BoxPartnersModule,
+        InlineSVGModule,
+        MatButtonModule,
+        BoxCarouselMobileModule,
+        TranslateModule
+    ]
 })
 export class HomepageModule {
 }

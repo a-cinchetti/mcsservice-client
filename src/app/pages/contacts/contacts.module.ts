@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {ContactsComponent} from './contacts.component';
 import {ContactsListComponent} from './contacts-list/contacts-list.component';
 import {MapModule} from "./map/map.module";
+import {TranslateModule} from "@ngx-translate/core";
 
 
 @NgModule({
@@ -10,9 +11,10 @@ import {MapModule} from "./map/map.module";
     ContactsComponent,
     ContactsListComponent
   ],
-  imports: [
-    CommonModule,
-    MapModule
-  ]
+    imports: [
+        CommonModule,
+        MapModule,
+        TranslateModule
+    ]
 })
 export class ContactsModule { }

@@ -1,7 +1,7 @@
 [
   {
-    "type": "Riqualificazione",
-    "name": "Hangar Manzoni",
+    "type": "WORKS.REDEVELOPMENT.NAME",
+    "name": "WORKS.REDEVELOPMENT.TYPE",
     "location": "Lecco",
     "active": false,
     "index": 0,
@@ -30,8 +30,8 @@
     ]
   },
   {
-    "type": "Nuova costruzione",
-    "name": "Capannone Bruniglass",
+    "type": "WORKS.NEW_CONSTRUCTION.NAME",
+    "name": "WORKS.NEW_CONSTRUCTION.TYPE",
     "location": "Trezzano sul Naviglio",
     "active": false,
     "index": 1,
@@ -61,8 +61,8 @@
     ]
   },
   {
-    "type": "Ristrutturazione",
-    "name": "Berling Packaging",
+    "type": "WORKS.RENOVATION.NAME",
+    "name": "WORKS.RENOVATION.TYPE",
     "location": "Albaredo d'Adige",
     "active": false,
     "index": 2,
@@ -97,8 +97,8 @@
     ]
   },
   {
-    "type": "Nuova sede",
-    "name": "Berling Packaging",
+    "type": "WORKS.NEW_HEADQUARTER.TYPE",
+    "name": "WORKS.NEW_HEADQUARTER.NAME",
     "location": "Trezzano sul Naviglio",
     "active": false,
     "index": 3,
@@ -129,8 +129,8 @@
     ]
   },
   {
-    "type": "Manutenzione",
-    "name": "Jazz Pharmaceuticals",
+    "type": "WORKS.MAINTENANCE.TYPE",
+    "name": "WORKS.MAINTENANCE.NAME",
     "location": "Villa guardia",
     "active": false,
     "index": 4,
@@ -163,8 +163,8 @@
     ]
   },
   {
-    "type": "Riqualificazione Energetica",
-    "name": "Edifici",
+    "type": "WORKS.ENERGY_RETROFIT.TYPE",
+    "name": "WORKS.ENERGY_RETROFIT.NAME",
     "location": "Milano",
     "active": false,
     "index": 5,
@@ -193,12 +193,12 @@
     ]
   },
   {
-    "name": "Altri progetti",
+    "name": "WORKS.OTHER_PROJECTS.TYPE",
     "active": false,
     "index": 6,
     "subFields": [
       {
-        "name": "Cappotti e verniciature",
+        "name": "WORKS.OTHER_PROJECTS.NAMES.INSULATION",
         "images": [
           "./assets/img/works/altro/cappotti/cappotti_1.jpg",
           "./assets/img/works/altro/cappotti/cappotti_2.jpg",
@@ -224,7 +224,7 @@
         ]
       },
       {
-        "name": "Nuove coperture",
+        "name": "WORKS.OTHER_PROJECTS.NAMES.NEW_ROOFING",
         "images": [
           "./assets/img/works/altro/coperture/coperture_1.jpeg",
           "./assets/img/works/altro/coperture/coperture_2.jpeg",
@@ -237,7 +237,7 @@
         ]
       },
       {
-        "name": "Resine e segnaletica orizzontale",
+        "name": "WORKS.OTHER_PROJECTS.NAMES.HORIZONTAL_SIGNAGE",
         "images": [
           "./assets/img/works/altro/resine/resine_1.JPG",
           "./assets/img/works/altro/resine/resine_2.jpg",

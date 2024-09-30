@@ -21,6 +21,35 @@
   }
 }
 
+.header-home {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.translate-section {
+  display: flex;
+  align-items: center;
+  color: #2a287c;
+
+  &-icon {
+    width: 40px;
+  }
+
+  &-select {
+    width: 64px;
+    display: flex;
+  }
+}
+
+.svg-flag-select {
+  display: flex;
+}
+
+::ng-deep .mat-pseudo-checkbox {
+  display: none !important;
+}
+
 .header-pages-menu {
   display: none;
 }
@@ -103,6 +132,7 @@ span {
   }
   ::ng-deep .text-menu {
     font-family: "DinPro", sans-serif !important;
+
     .mat-mdc-menu-item-text {
       color: #2a287c;
     }

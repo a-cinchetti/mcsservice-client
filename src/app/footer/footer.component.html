@@ -2,8 +2,8 @@
   <div class="list-contacts">
     <div class="site-elements">
       <div class="sections">
-        <span class="nav-text" (click)="goToWorksPage()">I nostri lavori</span>
-        <span class="nav-text" (click)="goToContactsPage()">Contatti</span>
+        <span class="nav-text" (click)="goToWorksPage()">{{ 'FOOTER.WORKS' | translate }}</span>
+        <span class="nav-text" (click)="goToContactsPage()">{{ 'FOOTER.CONTACTS' | translate }}</span>
       </div>
       <div class="certificate">
         <div class="image-wrapper">
@@ -19,13 +19,13 @@
           <span>24060 - <strong>Berzo San Fermo</strong> (BG)</span>
         </div>
         <div class="element">
-          <span><strong>Partita IVA</strong></span>
+          <span><strong>{{ 'FOOTER.VAT_NUMBER' | translate }}</strong></span>
           <span>01927120160</span>
         </div>
       </div>
       <div class="fiscals">
         <div class="element">
-          <span><strong>Telefono</strong></span>
+          <span><strong>{{ 'FOOTER.PHONE' | translate }}</strong></span>
           <span>335 7032630</span>
         </div>
         <div class="element">
@@ -36,6 +36,6 @@
   </div>
 
   <span class="copyright">
-    © 2024 C.M. Service. Tutti i diritti riservati
+    {{ 'FOOTER.RIGHT_RESERVED' | translate }}
   </span>
 </div>

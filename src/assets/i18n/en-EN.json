@@ -1,0 +1,67 @@
+{
+  "HEADER": {
+    "HOME": "Home",
+    "WORKS": "Our Works",
+    "CONTACTS": "Contacts"
+  },
+  "FOOTER": {
+    "WORKS": "Our Works",
+    "CONTACTS": "Contacts",
+    "VAT_NUMBER": "VAT Number",
+    "PHONE": "Phone",
+    "RIGHT_RESERVED": "© 2024 C.M. Service. All rights reserved"
+  },
+  "CONTACTS": {
+    "TITLE": "Contacts",
+    "LEGAL_ADDRESS": "Legal Address",
+    "OPERATIVE_ADDRESS": "Operating Address",
+    "PHONE": "Phone",
+    "EMAIL": "Email"
+  },
+  "DESCRIPTION": {
+    "ABSTRACT": "We manage and execute projects from the initial phases to final delivery (including installations), optimizing time and costs.",
+    "OUR_STORY": "Our Story",
+    "OUR_STORY_1": "C.M. Service is a company that has been operating for years in the construction sector, carrying out construction and renovation works for civil and industrial buildings, as well as building and installation maintenance for companies.",
+    "OUR_STORY_2": "It is also specialized in facade refurbishment, fireproof treatments for structures, and seismic retrofitting.",
+    "OUR_STORY_3": "It carries out the work with the highest standards, continuously and rigorously controlling the innovative materials used, while complying with all current regulations and certifications.",
+    "CERTIFICATES": "Certificates",
+    "CONTACT_US": "Contact Us"
+  },
+  "WORKS": {
+    "TITLE": "Our Works",
+    "SELECT_PROJECT": "Select a Project",
+    "SELECT_CATEGORY": "Select a Category",
+    "REDEVELOPMENT": {
+      "TYPE": "Redevelopment",
+      "NAME": "Manzoni Hangar"
+    },
+    "NEW_CONSTRUCTION": {
+      "TYPE": "New Construction",
+      "NAME": "Bruniglass Warehouse"
+    },
+    "RENOVATION": {
+      "TYPE": "Renovation",
+      "NAME": "Berling Packaging"
+    },
+    "NEW_HEADQUARTER": {
+      "TYPE": "New Headquarters",
+      "NAME": "Berling Packaging"
+    },
+    "MAINTENANCE": {
+      "TYPE": "Maintenance",
+      "NAME": "Jazz Pharmaceuticals"
+    },
+    "ENERGY_RETROFIT": {
+      "TYPE": "Energy Retrofit",
+      "NAME": "Buildings"
+    },
+    "OTHER_PROJECTS": {
+      "TYPE": "Other Projects",
+      "NAMES": {
+        "INSULATION": "Insulation and Painting",
+        "NEW_ROOFING": "New Roofing",
+        "HORIZONTAL_SIGNAGE": "Resins and Horizontal Signage"
+      }
+    }
+  }
+}

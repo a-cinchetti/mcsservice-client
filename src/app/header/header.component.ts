@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router, RouterModule} from '@angular/router';
+import {TranslateService} from "@ngx-translate/core";
+import {MatSelectChange} from "@angular/material/select";
 
 @Component({
   selector: 'app-header',
@@ -8,9 +10,13 @@ import {Router, RouterModule} from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  currentLang = 'it-IT';
+
+  constructor(private router: Router, private translateService: TranslateService) {
+  }
 
   ngOnInit(): void {
+    this.currentLang = this.translateService.currentLang;
   }
 
   goToWorksPage() {
@@ -23,5 +29,11 @@ export class HeaderComponent implements OnInit {
 
   goToHomepage() {
     this.router.navigateByUrl("");
+  }
+
+  changeLanguage($event: MatSelectChange) {
+    console.log($event.value);
+    this.translateService.use($event.value);
+    this.currentLang = $event.value;
   }
 }

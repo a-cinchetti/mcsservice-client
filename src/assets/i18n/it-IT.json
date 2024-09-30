@@ -1,0 +1,67 @@
+{
+  "HEADER": {
+    "HOME": "Home",
+    "WORKS": "I nostri lavori",
+    "CONTACTS": "Contatti"
+  },
+  "FOOTER": {
+    "WORKS": "I nostri lavori",
+    "CONTACTS": "Contatti",
+    "VAT_NUMBER": "Partita IVA",
+    "PHONE": "Telefono",
+    "RIGHT_RESERVED": "© 2024 C.M. Service. Tutti i diritti riservati"
+  },
+  "CONTACTS": {
+    "TITLE": "Contatti",
+    "LEGAL_ADDRESS": "Sede legale",
+    "OPERATIVE_ADDRESS": "Sede operativa",
+    "PHONE": "Telefono",
+    "EMAIL": "Email"
+  },
+  "DESCRIPTION": {
+    "ABSTRACT": "Gestiamo ed eseguiamo progetti dalle prime lavorazioni, alla consegna finale (impiantistica compresa) ottimizzando tempi e costi",
+    "OUR_STORY": "La nostra storia",
+    "OUR_STORY_1": "C.M. Service è un’azienda che opera da anni nel settore dell’edilizia eseguendo opere di costruzione e ristrutturazione di edifici civili ed industriali, manutenzione edile ed impiantistica delle aziende.",
+    "OUR_STORY_2": "Inoltre è specializzata in rifacimento di facciate, trattamenti al fuoco delle strutture ed adeguamenti sismici.",
+    "OUR_STORY_3": "Svolge il lavoro al meglio con un continuo e severo controllo dei materiali innovativi utilizzati, rispettando tutti i regolamenti e le certificazioni vigenti in materia.",
+    "CERTIFICATES": "Certificati",
+    "CONTACT_US": "Contattaci"
+  },
+  "WORKS": {
+    "TITLE": "I nostri lavori",
+    "SELECT_PROJECT": "Seleziona un progetto",
+    "SELECT_CATEGORY": "Seleziona una categoria",
+    "REDEVELOPMENT": {
+      "TYPE": "Riqualificazione",
+      "NAME": "Hangar Manzoni"
+    },
+    "NEW_CONSTRUCTION": {
+      "TYPE": "Nuova costruzione",
+      "NAME": "Capannone Bruniglass"
+    },
+    "RENOVATION": {
+      "TYPE": "Ritrutturazione",
+      "NAME": "Berling Packaging"
+    },
+    "NEW_HEADQUARTER": {
+      "TYPE": "Nuova sede",
+      "NAME": "Berling Packaging"
+    },
+    "MAINTENANCE": {
+      "TYPE": "Manutenzione",
+      "NAME": "Jazz Pharmaceuticals"
+    },
+    "ENERGY_RETROFIT": {
+      "TYPE": "Riqualificazione energetica",
+      "NAME": "Edifici"
+    },
+    "OTHER_PROJECTS": {
+      "TYPE": "Altri progetti",
+      "NAMES": {
+        "INSULATION": "Cappotti e verniciature",
+        "NEW_ROOFING": "Nuove coperture",
+        "HORIZONTAL_SIGNAGE": "Resine e segnaletica orizzontale"
+      }
+    }
+  }
+}

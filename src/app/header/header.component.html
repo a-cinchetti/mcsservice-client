@@ -1,16 +1,37 @@
 <div class="header-component">
-  <div class="icon-svg" (click)="goToHomepage()" aria-label="My icon" [inlineSVG]="'/assets/svg/logo/icon.svg'"></div>
+  <div class="header-home">
+    <div class="icon-svg" (click)="goToHomepage()" aria-label="My icon" [inlineSVG]="'/assets/svg/logo/icon.svg'"></div>
+    <div class="translate-section">
+      <mat-icon fontIcon="language" class="translate-section-icon"></mat-icon>
+      @if (currentLang) {
+        <mat-select (selectionChange)="changeLanguage($event)" class="translate-section-select" [value]="currentLang"
+                    [ngModel]="currentLang">
+          <mat-select-trigger>
+            <div inlineSVG="/assets/svg/flags/{{currentLang}}.svg" class="svg-flag-select"></div>
+          </mat-select-trigger>
+          <mat-option value="it-IT">
+            <div [inlineSVG]="'/assets/svg/flags/it-IT.svg'"></div>
+          </mat-option>
+          <mat-option value="en-EN">
+            <div [inlineSVG]="'/assets/svg/flags/en-EN.svg'"></div>
+          </mat-option>
+        </mat-select>
+      }
+    </div>
+  </div>
   <div class="header-pages">
-    <span (click)="goToWorksPage()"><strong>{{'I nostri lavori'}}</strong></span>
-    <span (click)="goToContactsPage()"><strong>{{'Contatti'}}</strong></span>
+    <span (click)="goToWorksPage()"><strong>{{ 'HEADER.WORKS' | translate }}</strong></span>
+    <span (click)="goToContactsPage()"><strong>{{ 'HEADER.CONTACTS' | translate }}</strong></span>
   </div>
   <div class="header-pages-menu">
-    <button mat-button [matMenuTriggerFor]="Menu" class="menu-button" >
+    <button mat-button [matMenuTriggerFor]="Menu" class="menu-button">
       <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
     </button>
     <mat-menu #Menu="matMenu">
-      <button mat-menu-item (click)="goToWorksPage()" class="text-menu"><strong>{{'I nostri lavori'}}</strong></button>
-      <button mat-menu-item (click)="goToContactsPage()" class="text-menu"><strong>{{'Contatti'}}</strong></button>
+      <button mat-menu-item (click)="goToWorksPage()" class="text-menu">
+        <strong>{{ 'HEADER.WORKS' | translate }}</strong></button>
+      <button mat-menu-item (click)="goToContactsPage()" class="text-menu">
+        <strong>{{ 'HEADER.CONTACTS' | translate }}</strong></button>
     </mat-menu>
   </div>
 </div>
